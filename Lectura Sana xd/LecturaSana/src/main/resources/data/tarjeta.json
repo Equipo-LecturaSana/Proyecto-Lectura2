@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "apartado": "comics",
+        "titulo": "COMICS",
+        "descripcion": "Revisa las noticias más recientes sobre comics",
+        "imagen": "/IMG/imagen novedades/comics.jpg"
+    },
+    {
+        "id": 2,
+        "apartado": "cine",
+        "titulo": "EMBLEMÁTICOS DEL CINE",
+        "descripcion": "Enterate de los libros que basaron tus franquicias preferidas",
+        "imagen": "/IMG/imagen novedades/emblematicos.jpg"
+    },
+    {
+        "id": 3,
+        "apartado": "mangas",
+        "titulo": "MANGAS",
+        "descripcion": "Revisa las más cuantiosas novedades del mundo del anime y manga",
+        "imagen": "/IMG/imagen novedades/mangas.jpg"
+    },
+    {
+        "id": 4,
+        "apartado": "novelas",
+        "titulo": "NOVELAS",
+        "descripcion": "Noticias sobre las novelas más relevantes del momento",
+        "imagen": "/IMG/imagen novedades/novelas.jpg"
+    },
+    {
+        "id": 5,
+        "apartado": "biografias",
+        "titulo": "BIOGRAFIAS",
+        "descripcion": "Revisa las nuevas biografías sobre grandes influyentes de nuestra época",
+        "imagen": "/IMG/imagen novedades/biografias.jpg"
+    },
+    {
+        "id": 6,
+        "apartado": "fantasia",
+        "titulo": "FANTASIA",
+        "descripcion": "Entérate de las obtras de fantasía del momento",
+        "imagen": "/IMG/imagen novedades/fantasia.jpg"
+    }
+]

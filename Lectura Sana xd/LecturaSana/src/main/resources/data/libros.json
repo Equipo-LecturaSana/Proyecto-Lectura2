@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "titulo": "Cazadores de Sombras",
+    "autor": "Cassandra Clare",
+    "categoria": "accion",
+    "precio": 19.99,
+    "imagen": "/IMG/imagen Index/descarga (4).jpg",
+    "sinopsis": "Una historia oscura de amor y demonios, que entusiasmará a las seguidoras de Stephenie Meyer y L.J.Smith. En el Pandemonium, la discoteca de moda de Nueva York, Clary sigue a un atractivo chico de pelo azul hasta que presencia su muerte a manos de tres jóvenes cubiertos de extraños tatuajes."
+  },
+  {
+    "id": 2,
+    "titulo": "El Peso del Silencio",
+    "autor": "Laura Gallego",
+    "categoria": "accion",
+    "precio": 22.50,
+    "imagen": "/IMG/imagen Index/descarga (2).jpg",
+    "sinopsis": "Una conmovedora historia sobre una familia que enfrenta secretos del pasado que amenazan con destruir su presente. Una narrativa profundamente emocional."
+  },
+  {
+    "id": 3,
+    "titulo": "Bajo el Mismo Cielo",
+    "autor": "Isabel Keats",
+    "categoria": "romance",
+    "precio": 17.95,
+    "imagen": "/IMG/imagen Index/descarga (1).jpg",
+    "sinopsis": "Dos almas destinadas a encontrarse luchan contra las circunstancias que los separan. Una historia de amor que trasciende el tiempo y la distancia."
+  },
+  {
+    "id": 4,
+    "titulo": "Nexus Horizon",
+    "autor": "Daniel Cruz",
+    "categoria": "ciencia-ficcion",
+    "precio": 24.75,
+    "imagen": "/IMG/imagen Index/descarga (3).jpg",
+    "sinopsis": "En un futuro donde la humanidad ha colonizado Marte, un descubrimiento revolucionario cambiará para siempre nuestra comprensión del universo."
+  },
+  {
+    "id": 5,
+    "titulo": "El Heredero de los Reinos",
+    "autor": "Elena Montoya",
+    "categoria": "fantasia",
+    "precio": 21.99,
+    "imagen": "/IMG/imagen Index/descarga.jpg",
+    "sinopsis": "Un joven descubre que es el heredero de un reino mágico olvidado y deberá embarcarse en una épica aventura para reclamar su legado."
+  },
+  {
+    "id": 6,
+    "titulo": "Susurros en la Oscuridad",
+    "autor": "Miguel Ángel Sánchez",
+    "categoria": "terror",
+    "precio": 18.50,
+    "imagen": "/IMG/imagen Index/descarga (5).jpg",
+    "sinopsis": "Una casa abandonada con un pasado siniestro se convierte en la pesadilla de una familia que solo buscaba un nuevo comienzo."
+  },
+  {
+    "id": 7,
+    "titulo": "Vida Entre Pinceles",
+    "autor": "Clara Ruiz",
+    "categoria": "biografia",
+    "precio": 26.80,
+    "imagen": "/IMG/imagen Index/vida-pinceles.jpg",
+    "sinopsis": "La fascinante vida de la pintora contemporánea más influyente de nuestro tiempo, contada a través de sus memorias y anécdotas personales."
+  },
+  {
+    "id": 8,
+    "titulo": "Operación Cero",
+    "autor": "Carlos Mendoza",
+    "categoria": "accion",
+    "precio": 20.45,
+    "imagen": "/IMG/imagen Index/operacion-cero.jpg",
+    "sinopsis": "Un agente secreto debe evitar un catastrófico ataque global mientras lucha contra sus propios demonios personales. Ritmo vertiginoso."
+  },
+  {
+    "id": 9,
+    "titulo": "Las Huellas del Ayer",
+    "autor": "Ana Torres",
+    "categoria": "accion",
+    "precio": 23.99,
+    "imagen": "/IMG/imagen Index/huellas-ayer.jpg",
+    "sinopsis": "Tres generaciones de mujeres luchan por encontrar su lugar en el mundo mientras enfrentan los secretos que las han unido y separado."
+  }
+]

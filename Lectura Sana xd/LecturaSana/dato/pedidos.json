@@ -1,0 +1,147 @@
+[ {
+  "id" : 1,
+  "fecha" : "2025-09-29T21:52:33.2508229",
+  "items" : [ {
+    "id" : 1,
+    "libroId" : 4,
+    "titulo" : "Nexus Horizon",
+    "precio" : 24.75,
+    "cantidad" : 1,
+    "imagen" : "/IMG/imagen Index/descarga (3).jpg"
+  } ],
+  "total" : 24.75
+}, {
+  "id" : 2,
+  "fecha" : "2025-09-29T21:52:43.9127266",
+  "items" : [ {
+    "id" : 1,
+    "libroId" : 1,
+    "titulo" : "Cazadores de Sombras",
+    "precio" : 19.99,
+    "cantidad" : 1,
+    "imagen" : "/IMG/imagen Index/descarga (4).jpg"
+  } ],
+  "total" : 19.99
+}, {
+  "id" : 3,
+  "fecha" : "2025-09-29T21:52:59.1106775",
+  "items" : [ {
+    "id" : 1,
+    "libroId" : 2,
+    "titulo" : "El Peso del Silencio",
+    "precio" : 22.5,
+    "cantidad" : 1,
+    "imagen" : "/IMG/imagen Index/descarga (2).jpg"
+  } ],
+  "total" : 22.5
+}, {
+  "id" : 4,
+  "fecha" : "2025-09-29T21:53:51.1698974",
+  "items" : [ {
+    "id" : 1,
+    "libroId" : 5,
+    "titulo" : "El Heredero de los Reinos",
+    "precio" : 21.99,
+    "cantidad" : 1,
+    "imagen" : "/IMG/imagen Index/descarga.jpg"
+  } ],
+  "total" : 21.99
+}, {
+  "id" : 5,
+  "fecha" : "2025-09-29T22:02:49.9392641",
+  "items" : [ {
+    "id" : 1,
+    "libroId" : 3,
+    "titulo" : "Bajo el Mismo Cielo",
+    "precio" : 17.95,
+    "cantidad" : 1,
+    "imagen" : "/IMG/imagen Index/descarga (1).jpg"
+  } ],
+  "total" : 17.95
+}, {
+  "id" : 6,
+  "fecha" : "2025-09-30T13:44:45.8133492",
+  "items" : [ {
+    "id" : 1,
+    "libroId" : 3,
+    "titulo" : "Bajo el Mismo Cielo",
+    "precio" : 17.95,
+    "cantidad" : 1,
+    "imagen" : "/IMG/imagen Index/descarga (1).jpg"
+  }, {
+    "id" : 2,
+    "libroId" : 5,
+    "titulo" : "El Heredero de los Reinos",
+    "precio" : 21.99,
+    "cantidad" : 1,
+    "imagen" : "/IMG/imagen Index/descarga.jpg"
+  } ],
+  "total" : 39.94
+}, {
+  "id" : 7,
+  "fecha" : "2025-09-30T13:45:18.6135153",
+  "items" : [ {
+    "id" : 1,
+    "libroId" : 9,
+    "titulo" : "Las Huellas del Ayer",
+    "precio" : 23.99,
+    "cantidad" : 1,
+    "imagen" : "/IMG/imagen Index/huellas-ayer.jpg"
+  } ],
+  "total" : 23.99
+}, {
+  "id" : 8,
+  "fecha" : "2025-09-30T14:43:40.3765203",
+  "items" : [ {
+    "id" : 1,
+    "libroId" : 7,
+    "titulo" : "Vida Entre Pinceles",
+    "precio" : 26.8,
+    "cantidad" : 1,
+    "imagen" : "/IMG/imagen Index/vida-pinceles.jpg"
+  } ],
+  "total" : 26.8
+}, {
+  "id" : 9,
+  "fecha" : "2025-10-01T11:49:26.7294621",
+  "items" : [ {
+    "id" : 1,
+    "libroId" : 2,
+    "titulo" : "El Peso del Silencio",
+    "precio" : 22.5,
+    "cantidad" : 1,
+    "imagen" : "/IMG/imagen Index/descarga (2).jpg"
+  } ],
+  "total" : 22.5
+}, {
+  "id" : 10,
+  "fecha" : "2025-10-01T13:02:21.0604451",
+  "items" : [ {
+    "id" : 1,
+    "libroId" : 1,
+    "titulo" : "Cazadores de Sombras",
+    "precio" : 19.99,
+    "cantidad" : 1,
+    "imagen" : "/IMG/imagen Index/descarga (4).jpg"
+  } ],
+  "total" : 19.99
+}, {
+  "id" : 11,
+  "fecha" : "2025-10-22T12:54:40.5939667",
+  "items" : [ {
+    "id" : 1,
+    "libroId" : 2,
+    "titulo" : "El Peso del Silencio",
+    "precio" : 22.5,
+    "cantidad" : 2,
+    "imagen" : "/IMG/imagen Index/descarga (2).jpg"
+  }, {
+    "id" : 2,
+    "libroId" : 8,
+    "titulo" : "Operación Cero",
+    "precio" : 20.45,
+    "cantidad" : 1,
+    "imagen" : "/IMG/imagen Index/operacion-cero.jpg"
+  } ],
+  "total" : 65.45
+} ]

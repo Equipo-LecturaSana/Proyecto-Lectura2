@@ -1,0 +1,56 @@
+[
+    {
+        "id":1,"apartado":"comics","titulo":"MUERE STAN LEE","descripcion":"El famoso escritor y editor de comics estadounidense Stan Lee, murio el 12 de noviembre dek 2018","contenido":"Stan Lee, creador de iconos como Spider-Man, X-Men y Los 4 Fantásticos, dejó un legado imborrable en la cultura pop. Su filosofía 'Excelsior!' continúa inspirando a nuevas generaciones de escritores y artistas del cómic.","imagen":"/IMG/imagen novedades/ncomics1.jpg"
+    },
+    {
+        "id":2,"apartado":"comics","titulo":"SUPERMAN ES UN ÉXITO EN CINES","descripcion":"Superman, dirigida por James Gunn,se convirtió en la única película de superhéroes de 2025 en superar los 600 millones de dólares recaudados globalmente.","contenido":"La reinvención del Hombre de Acero por James Gunn ha revitalizado el género de superhéroes, combinando acción espectacular con un profundo desarrollo del personaje. La película ha sido elogiada por críticos y fans por su respeto al material original.","imagen":"/IMG/imagen novedades/ncomics2.jpg"
+    },
+    {
+        "id":3,"apartado":"comics","titulo":"IRON-HEART UN FRACASO EN COMICS Y TELEVISION","descripcion":"Iron-Heart fracasó estrepitosamente, decepcionando con cómics mal recibidos y una serie de TV abrupta y confusa que dejó a fans del superheroe Iron-man y críticos insatisfechos.","contenido":"El personaje de Riri Williams no logró conectar con la audiencia debido a una escritura apresurada y falta de desarrollo coherente. Los expertos señalan que el problema radica en forzar reemplazos de personajes icónicos sin construir adecuadamente los nuevos.","imagen":"/IMG/imagen novedades/ncomics3.jpg"
+    },
+    {
+        "id":4,"apartado":"cine","titulo":"EL SEÑOR DE LOS ANILLOS SIGUE CAUTIVANDO NUEVAS GENERACIONES","descripcion":"La trilogía dirigida por Peter Jackson, basada en la obra de J.R.R. Tolkien, continúa siendo un referente del cine épico y la fantasía literaria.","contenido":"Más de dos décadas después de su estreno, la adaptación de 'El Señor de los Anillos' mantiene su relevancia gracias a su narrativa atemporal, efectos visuales pioneros y profundos temas sobre la amistad, el sacrificio y la resistencia contra la oscuridad.","imagen":"/IMG/imagen novedades/ncine1.jpg"
+    },
+    {
+        "id":5,"apartado":"cine","titulo":"EL RESPLANDOR: DEL TERROR ESCRITO AL CINE INMORTAL","descripcion":"La adaptación de la novela de Stephen King, llevada al cine por Stanley Kubrick, es uno de los clásicos más recordados del género de terror psicológico.","contenido":"Aunque Stephen King inicialmente criticó la adaptación de Kubrick por desviarse de su visión, el tiempo ha convertido 'El Resplandor' en un estudio maestral sobre la locura, el alcoholismo y los fantasmas que llevamos dentro.","imagen":"/IMG/imagen novedades/ncine2.jpg"
+    },
+    {
+        "id":6,"apartado":"cine","titulo":"HARRY POTTER: LA MAGIA QUE TRASCENDIÓ LAS PÁGINAS","descripcion":"La saga creada por J.K. Rowling conquistó a millones, transformando el cine juvenil y consolidando uno de los fenómenos culturales más grandes de la historia.","contenido":"Las ocho películas de Harry Potter no solo adaptaron fielmente los libros, sino que expandieron el mundo mágico con impresionante diseño de producción y efectos visuales. El legado continúa con nuevas generaciones descubriendo la magia de Hogwarts.","imagen":"/IMG/imagen novedades/ncine3.jpg"
+    },
+    {
+        "id":7,"apartado":"mangas","titulo":"MUERE AKIRA TORIYAMA","descripcion":"El 1 de marzo de 2024 falleció Akira Toriyama, creador de Dragon Ball, dejando un legado eterno en el manga, el anime y la cultura popular.","contenido":"Toriyama revolucionó el shonen con Dragon Ball, introduciendo elementos como las transformaciones de poder y torneos de artes marciales que definirían el género. Su influencia se extiende a creadores de todo el mundo que crecieron con sus obras.","imagen":"/IMG/imagen novedades/nmangas1.jpg"
+    },
+    {
+        "id":8,"apartado":"mangas","titulo":"HAN PASADO 30 AÑOS DESDE LA EMISION DEL PRIMER EPISODIO EN TELEVISIÓN DE NEON GENESIS EVANGELION","descripcion":"Este año se cumplen 30 años desde el estreno de Neon Genesis Evangelion en la televisión japonesa. La serie, creada por Hideaki Anno, no solo redefinió el género mecha, sino que también dejó una profunda huella cultural y filosófica que sigue influyendo en el anime y la ciencia ficción hasta hoy.","contenido":"Evangelion desafió las convenciones del anime con su exploración de la depresión, identidad y relaciones humanas a través de metáforas religiosas y psicológicas. Su final controvertido sigue generando discusiones tres décadas después.","imagen":"/IMG/imagen novedades/nmangas2.jpg"
+    },
+    {
+        "id":9,"apartado":"mangas","titulo":"BERSERK VUELVE CON UN NUEVO TOMO DESPUÉS DE AÑOS EN HIATUS","descripcion":"Tras varios años de pausa, Berserk regresa con un nuevo tomo que continúa la historia iniciada por Kentaro Miura. Los fans celebran este esperado lanzamiento, que mantiene viva una de las obras más influyentes del manga oscuro y épico.","contenido":"El estudio de los asistentes de Miura ha continuado la obra maestra respetando el estilo y la visión del creador original. El nuevo arco promete desarrollar el viaje de Guts y Casca mientras enfrentan nuevas amenazas sobrenaturales.","imagen":"/IMG/imagen novedades/nmangas3.jpg"
+    },
+    {
+        "id":10,"apartado":"novelas","titulo":"ORGULLO Y PREJUICIO: EL ROMANCE ETERNO DE AUSTEN","descripcion":"La icónica novela de Jane Austen sigue brillando en la pantalla grande, mostrando que el amor y los prejuicios sociales nunca pasan de moda.","contenido":"La adaptación de 2005 con Keira Knightley capturó perfectamente la esencia de la sátira social de Austen, explorando temas de clase, género y la complejidad de las relaciones humanas que permanecen relevantes en el siglo XXI.","imagen":"/IMG/imagen novedades/nnovelas1.jpg"
+    },
+    {
+        "id":11,"apartado":"novelas","titulo":"MOBY DICK: LA OBSESIÓN QUE CONQUISTÓ AL CINE","descripcion":"La obra de Herman Melville inspiró adaptaciones inolvidables, llevando la lucha del capitán Ahab contra la gran ballena blanca a un nivel épico.","contenido":"La novela de Melville, inicialmente un fracaso comercial, encontró su verdadero reconocimiento en el cine. Las adaptaciones han explorado la naturaleza obsesiva de Ahab como metáfora de la lucha humana contra fuerzas incontrolables.","imagen":"/IMG/imagen novedades/nnovelas2.jpg"
+    },
+    {
+        "id":12,"apartado":"novelas","titulo":"LOS MISERABLES: DEL PAPEL AL MUSICAl CINEMATOGRÁFICO","descripcion":"La novela de Victor Hugo dio vida a una de las películas más aclamadas, combinando drama, historia y música en un relato conmovedor.","contenido":"La adaptación musical de 2012, con actuaciones en vivo durante el rodaje, capturó la esencia revolucionaria de la obra de Hugo. La película transporta a la audiencia a la Francia del siglo XIX con emocionantes números musicales.","imagen":"/IMG/imagen novedades/nnovelas3.jpg"
+    },
+    {
+        "id":13,"apartado":"biografias","titulo":"EL DIARIO DE ANA FRANK: TESTIMONIO DE ESPERANZA","descripcion":"La adaptación del famoso diario narra la vida oculta de Ana Frank durante la ocupación nazi, un relato íntimo convertido en símbolo universal.","contenido":"Las adaptaciones cinematográficas han preservado la voz de Ana Frank, mostrando no solo el horror del Holocausto sino también los sueños y esperanzas de una joven que soñaba con ser escritora en un mundo destrozado por la guerra.","imagen":"/IMG/imagen novedades/nbiografias1.jpg"
+    },
+    {
+        "id":14,"apartado":"biografias","titulo":"LA LISTA DE SCHINDLER: LA MEMORIA HECHA CINE","descripcion":"Inspirada en la novela biográfica El arca de Schindler de Thomas Keneally, muestra cómo Oskar Schindler salvó a cientos de judíos durante el Holocausto.","contenido":"La película de Steven Spielberg transformó la historia real en un poderoso testimonio cinematográfico, utilizando el blanco y negro para crear una atmósfera histórica y emocional que conmovió al mundo entero.","imagen":"/IMG/imagen novedades/nbiografias2.jpg"
+    },
+    {
+        "id":15,"apartado":"biografias","titulo":"FRIDA: LA VIDA DETRÁS DEL MITO","descripcion":"Basada en la biografía escrita por Hayden Herrera, la película retrata la pasión, el dolor y el arte de Frida Kahlo, una figura única del siglo XX.","contenido":"Salma Hayek encarnó magistralmente a Frida Kahlo, mostrando su lucha contra el dolor físico, sus relaciones tumultuosas y cómo transformó su sufrimiento en un arte revolucionario que desafió convenciones sociales y artísticas.","imagen":"/IMG/imagen novedades/nbiografias3.jpg"
+    },
+    {
+        "id":16,"apartado":"fantasia","titulo":"PERCY JACKSON Y LOS DIOSES DEL OLIMPO","descripcion":"La saga de Rick Riordan mezcla mitología griega con aventuras modernas, convirtiéndose en un clásico juvenil lleno de acción y humor.","contenido":"La reciente adaptación televisiva ha sido elogiada por su fidelidad a los libros y por involucrar directamente a Rick Riordan en la producción, corrigiendo los errores de las adaptaciones cinematográficas anteriores.","imagen":"/IMG/imagen novedades/nfantasia1.jpg"
+    },
+    {
+        "id":17,"apartado":"fantasia","titulo":"LAS CRÓNICAS DE NARNIA","descripcion":"Escrita por C.S. Lewis, esta serie transporta a los lectores a un mundo mágico donde la valentía y la fe marcan el destino de reinos enteros.","contenido":"Las adaptaciones cinematográficas capturaron la magia y el simbolismo cristiano de la obra de Lewis, creando mundos visualmente impresionantes que introdujeron a nuevas generaciones en el armario mágico que lleva a Narnia.","imagen":"/IMG/imagen novedades/nfantasia2.jpg"
+    },
+    {
+        "id":18,"apartado":"fantasia","titulo":"EL NOMBRE DEL VIENTO","descripcion":"Patrick Rothfuss relata la vida de Kvothe, un héroe y músico que narra su propia leyenda en una de las obras más aclamadas de la fantasía moderna.","contenido":"Aunque aún espera adaptación cinematográfica, los derechos han sido adquiridos para una serie que promete explorar la compleja narrativa de Kvothe, combinando magia, música y misterio en un mundo ricamente construido.","imagen":"/IMG/imagen novedades/nfantasia3.jpg"
+    }
+]

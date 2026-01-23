@@ -1,0 +1,61 @@
+[ {
+  "nombre" : "juan",
+  "apellidos" : "saavedra",
+  "tipoDocumento" : null,
+  "numeroDocumento" : null,
+  "telefono" : "926384891",
+  "genero" : "masculino",
+  "cumpleanos" : "2025-09-18",
+  "email" : "saavedraprietojuanesau@gmail.com",
+  "password" : "123"
+}, {
+  "nombre" : "david",
+  "apellidos" : "socola",
+  "tipoDocumento" : null,
+  "numeroDocumento" : null,
+  "telefono" : "98948383",
+  "genero" : "otro",
+  "cumpleanos" : "2025-09-12",
+  "email" : "amamadeAndres69@gmail.com",
+  "password" : "12345"
+}, {
+  "nombre" : "david",
+  "apellidos" : "socola",
+  "tipoDocumento" : null,
+  "numeroDocumento" : null,
+  "telefono" : "98948383",
+  "genero" : "masculino",
+  "cumpleanos" : "2025-09-11",
+  "email" : "amamadeAndres69@gmail.com",
+  "password" : "2323"
+}, {
+  "nombre" : "ian",
+  "apellidos" : "socola",
+  "tipoDocumento" : null,
+  "numeroDocumento" : null,
+  "telefono" : "98948383",
+  "genero" : "masculino",
+  "cumpleanos" : "2025-09-10",
+  "email" : "ian@gmail.com",
+  "password" : "1233"
+}, {
+  "nombre" : "Eduardo Chipitaz",
+  "apellidos" : "Alzamora 4K",
+  "tipoDocumento" : null,
+  "numeroDocumento" : null,
+  "telefono" : "987654345",
+  "genero" : "otro",
+  "cumpleanos" : "2003-09-07",
+  "email" : "edusitopilin@gmail.com",
+  "password" : "123"
+}, {
+  "nombre" : "pedro",
+  "apellidos" : "sanchez",
+  "tipoDocumento" : null,
+  "numeroDocumento" : null,
+  "telefono" : "908790876",
+  "genero" : "masculino",
+  "cumpleanos" : "2025-03-01",
+  "email" : "joseangel@gmail.com",
+  "password" : "12345"
+} ]
