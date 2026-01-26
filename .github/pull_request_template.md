@@ -8,4 +8,3 @@ Explica qué funcionalidad o corrección estás integrando.
 - [ ] Otros.
 
 ## 🔗 Historia de Usuario
-Referencia a la HU (Visualización de Feed).
