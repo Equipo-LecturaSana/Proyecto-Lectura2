@@ -54,9 +54,9 @@ Crea una plataforma web de lectura intuitiva, segura y escalable que impulse el 
 
 ### 📑 Objetivos específicos
 
-- Diseñar una UI/UX responsive para móviles y escritorio 📱 💻
+- Diseñar una UI/UX responsive utilizando Bootstrap 5 para móviles y escritorio 📱 💻
 - Implementar un motor de búsqueda y filtrado eficiente por categorías 🔍
-- Gestionar un sistema de noticias y novedades dinámico 📰
+- Asegurar la plataforma mediante Spring Security para la gestión de roles de usuario y administrador 🔐
 
 ## 🏆 Alcances del Proyecto
 
@@ -107,33 +107,30 @@ La ejecución se ha dividido en ciclos de trabajo (Sprints) para asegurar una ev
 
 ## 🛠️ Herramientas de Desarrollo
 
-🔹 Java 17 (JDK)      : Lenguaje de programación principal para la lógica del servidor.
-🔹 Spring Boot 3      : Framework para la creación de la aplicación web y gestión de dependencias.
-🔹 MySQL Server       : Motor de base de datos relacional para la persistencia de libros y noticias.
-🔹 MySQL Workbench	   : Interfaz gráfica para la administración y diseño del esquema de base de datos.
-🔹 Visual Studio Code : IDE principal utilizado para la codificación y depuración del proyecto.
-🔹 Git / GitHub	   : Sistema de control de versiones para la colaboración y gestión de ramas.
-🔹 Maven	           : Gestor de proyectos y automatización de la compilación de artefactos.
-🔹 Thymeleaf	       : Motor de plantillas para renderizar las vistas HTML de forma dinámica.
+- Java 21 (LTS): Lenguaje de programación de última generación para una lógica de servidor eficiente.
+- Spring Boot 3.5.6: Framework de alto rendimiento para la creación de la aplicación y gestión de microservicios.
+- Spring Security: Módulo especializado para la autenticación y protección de rutas críticas.
+- Spring Data JPA: Abstracción de persistencia para una interacción fluida con MySQL.
+- MySQL Server 8.0: Motor de base de datos relacional robusto para el almacenamiento de datos.
+- Bootstrap 5.3: Framework CSS líder para garantizar una interfaz 100% adaptable y moderna.
+- Thymeleaf: Motor de plantillas que permite integrar la lógica de seguridad y datos en el HTML.
 
 ## 🏗️ Arquitectura de la Solución
 
-El proyecto **Lectura Sana** utiliza una arquitectura de capas basada en el patrón **MVC (Modelo-Vista-Controlador)**, lo que permite una separación clara entre la interfaz de usuario y la lógica de negocio.
+El proyecto **Lectura Sana** implementa una arquitectura multicapa que garantiza la escalabilidad y el mantenimiento del sistema, integrando seguridad y persistencia de manera profesional.
 
 | Capa | Componente | Función Principal |
 | :--- | :--- | :--- |
-| **Vista (View)** | Thymeleaf / HTML5 / CSS3 | Renderiza la interfaz gráfica y muestra los datos de libros y noticias al usuario final. |
-| **Controlador** | `NovedadesController.java` | Gestiona las peticiones del navegador, procesa la entrada del usuario y devuelve la vista correspondiente. |
-| **Negocio (Service)** | `NovedadService.java` | Contiene la lógica principal, como el cálculo de la paginación y el filtrado de contenidos literarios. |
-| **Datos (Repository)** | Spring Data JPA | Actúa como puente entre el código Java y la base de datos para realizar consultas de forma automática. |
-| **Persistencia** | MySQL Server | Almacena físicamente la información de usuarios, roles, libros y el historial de noticias. |
-
----
+| **Vista (View)** | Thymeleaf / **Bootstrap 5** | Interfaz adaptativa que consume fragmentos de seguridad para mostrar opciones según el rol del usuario. |
+| **Seguridad** | **Spring Security 6** | Filtro de seguridad que intercepta peticiones, gestiona el inicio de sesión y protege las rutas administrativas. |
+| **Negocio (Service)** | `NovedadService.java` | Capa intermedia donde reside la lógica de negocio y el procesamiento de los datos literarios. |
+| **Acceso a Datos** | **Spring Data JPA** | Repositorios que automatizan las consultas a la base de datos mediante el mapeo objeto-relacional (ORM). |
+| **Persistencia** | **MySQL Server** | Almacén de datos persistente para el catálogo de libros, noticias y credenciales de acceso. |
 
 ## 🏆 Conclusiones
 
 * **Escalabilidad y Orden:** El uso de una arquitectura multicapa facilita el mantenimiento del código, permitiendo que nuevos integrantes se sumen al equipo sin generar conflictos en la lógica existente.
 * **Optimización de Recursos:** La implementación de paginación en el servidor mediante Spring Boot asegura que la aplicación consuma menos memoria, cargando solo los datos necesarios para el lector.
-* **Seguridad en el Desarrollo:** El flujo de trabajo basado en ramas personales (**KarinaRama**) permite experimentar y documentar funcionalidades sin poner en riesgo la estabilidad de la rama principal (`main`).
-* **Eficiencia en la Configuración:** La integración exitosa entre **MySQL Workbench** y **VS Code** demuestra la importancia de un entorno de desarrollo bien configurado para evitar cuellos de botella técnicos.
+* **Seguridad y Estándares:** La adopción de Spring Security y Java 21 eleva el proyecto a estándares industriales, permitiendo una gestión de identidades segura y aprovechando las últimas mejoras de rendimiento del ecosistema Java..
+* **Eficiencia en la Configuración:** La integración exitosa entre **MySQL** y **VS Code** demuestra la importancia de un entorno de desarrollo bien configurado para evitar cuellos de botella técnicos.
 * **Valor de la Documentación:** Contar con un **README** detallado transforma un conjunto de archivos de código en un producto profesional y comprensible para cualquier desarrollador externo.
