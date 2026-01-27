@@ -17,11 +17,13 @@ public class NovedadesController {
     private final NovedadService ns;
     private final NoticiaService notiService;
 
+
+// Constructor para inyección de dependencias
     public NovedadesController(NovedadService ns, NoticiaService notiService) {
         this.ns = ns;
         this.notiService = notiService;
     }
-
+// Método para listar todas las novedades con paginación
     @GetMapping("/novedades")
     public String novedades(@RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "6") int size, Model model) {
         Page<TarjetaNovedad> pagina = ns.obtenerNovedadesPaginadas(PageRequest.of(page, size));
@@ -29,6 +31,7 @@ public class NovedadesController {
         return "novedades";
     }
 
+    // Método para mostrar el detalle de noticias según el apartado seleccionado
     @GetMapping("/detalle/{apartado}")
     public String detalle(@PathVariable String apartado, Model model) {
         List<Noticia> noticias = notiService.obtenerPorApartado(apartado);
