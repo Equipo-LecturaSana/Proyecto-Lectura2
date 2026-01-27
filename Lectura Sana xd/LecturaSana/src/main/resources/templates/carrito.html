@@ -2,89 +2,473 @@
 <html lang="es" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito - LecturaSana</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" />
     <link rel="stylesheet" th:href="@{/css/style.css}" />
+    <style>
+        :root {
+            --gradient-primary: linear-gradient(90deg, #2c3e50 0%, #4ca1af 100%);
+            --color-primary: #2c3e50;
+            --color-secondary: #4ca1af;
+            --color-danger: #e74c3c;
+            --color-success: #27ae60;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .carrito-header {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 40px 0;
+            margin-bottom: 40px;
+            border-radius: 0 0 15px 15px;
+            box-shadow: var(--shadow);
+        }
+
+        .carrito-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 0;
+        }
+
+        .carrito-header .badge {
+            background: rgba(255,255,255,0.3);
+            font-size: 1rem;
+            padding: 8px 12px;
+        }
+
+        .cart-item-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border-left: 5px solid var(--color-secondary);
+        }
+
+        .cart-item-card:hover {
+            transform: translateX(5px);
+            box-shadow: var(--shadow);
+        }
+
+        .item-image {
+            width: 100px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .item-info h5 {
+            color: var(--color-primary);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .item-price {
+            font-size: 1.3rem;
+            color: var(--color-success);
+            font-weight: 700;
+        }
+
+        .cantidad-input {
+            width: 80px;
+            border: 2px solid var(--color-secondary);
+            border-radius: 6px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .cantidad-input:focus {
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(76, 161, 175, 0.1);
+        }
+
+        .btn-remove {
+            background: rgba(231, 76, 60, 0.1);
+            color: var(--color-danger);
+            border: none;
+            border-radius: 6px;
+            padding: 8px 12px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-remove:hover {
+            background: var(--color-danger);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .resumen-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 20px;
+        }
+
+        .resumen-card h5 {
+            color: var(--color-primary);
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .resumen-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 1rem;
+        }
+
+        .resumen-row.total {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--color-success);
+            border: none;
+            padding: 15px 0;
+            margin-top: 10px;
+        }
+
+        .resumen-row.total span:first-child {
+            color: var(--color-primary);
+        }
+
+        .form-section {
+            margin-top: 25px;
+            padding-top: 25px;
+            border-top: 2px solid #eee;
+        }
+
+        .form-section h6 {
+            color: var(--color-primary);
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .form-control {
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 12px 15px;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+            border-color: var(--color-secondary);
+            box-shadow: 0 0 0 3px rgba(76, 161, 175, 0.1);
+        }
+
+        .form-control::placeholder {
+            color: #999;
+        }
+
+        .btn-pagar {
+            background: var(--gradient-primary);
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-radius: 8px;
+            width: 100%;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(44, 62, 80, 0.3);
+        }
+
+        .btn-pagar:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(44, 62, 80, 0.4);
+            color: white;
+        }
+
+        .btn-pagar:active {
+            transform: translateY(0);
+        }
+
+        .btn-seguir {
+            background: white;
+            color: var(--color-secondary);
+            border: 2px solid var(--color-secondary);
+            padding: 12px 25px;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-seguir:hover {
+            background: var(--color-secondary);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .btn-limpiar {
+            background: rgba(230, 126, 34, 0.1);
+            color: #e67e22;
+            border: 2px solid #e67e22;
+            padding: 12px 25px;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-limpiar:hover:not(:disabled) {
+            background: #e67e22;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .btn-limpiar:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .carrito-vacio {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .carrito-vacio i {
+            font-size: 4rem;
+            color: var(--color-secondary);
+            margin-bottom: 20px;
+            opacity: 0.5;
+        }
+
+        .carrito-vacio h3 {
+            color: var(--color-primary);
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .carrito-vacio p {
+            color: #999;
+            margin-bottom: 30px;
+        }
+
+        .alert {
+            border-radius: 8px;
+            border: none;
+            padding: 15px 20px;
+            font-weight: 500;
+        }
+
+        .alert-danger {
+            background: rgba(231, 76, 60, 0.1);
+            color: var(--color-danger);
+        }
+
+        .alert-success {
+            background: rgba(39, 174, 96, 0.1);
+            color: var(--color-success);
+        }
+
+        @media (max-width: 768px) {
+            .carrito-header h1 {
+                font-size: 1.8rem;
+            }
+            .resumen-card {
+                position: relative;
+                top: 0;
+                margin-top: 30px;
+            }
+            .item-image {
+                width: 80px;
+                height: 110px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div th:replace="~{fragmentos/navbar :: navbar}"></div>
 
-    <main class="container py-5">
-        <h1 class="mb-4">Tu Carrito de Compras</h1>
+    <div class="carrito-header">
+        <div class="container">
+            <h1><i class="bi bi-cart3"></i> Tu Carrito de Compras</h1>
+            <p class="mt-2 mb-0" th:if="${not #lists.isEmpty(carrito)}" th:text="'(' + ${#lists.size(carrito)} + ' artículos)'"></p>
+        </div>
+    </div>
 
+    <main class="container" style="padding: 0 20px 40px;">
         <div th:if="${error}" class="alert alert-danger" th:text="${error}"></div>
         <div th:if="${mensaje}" class="alert alert-success" th:text="${mensaje}"></div>
         <div th:if="${mensajeError}" class="alert alert-danger" th:text="${mensajeError}"></div>
 
-        <div class="row g-5">
+        <div th:if="${#lists.isEmpty(carrito)}" class="carrito-vacio">
+            <i class="bi bi-bag"></i>
+            <h3>¡Tu carrito está vacío!</h3>
+            <p>Comienza a explorar nuestro catálogo y agrega tus libros favoritos.</p>
+            <a th:href="@{/catalogo}" class="btn btn-seguir">
+                <i class="bi bi-shop"></i> Ir al Catálogo
+            </a>
+        </div>
+
+        <div th:if="${not #lists.isEmpty(carrito)}" class="row g-4">
             <div class="col-lg-8">
-                <div class="table-responsive">
-                    <table class="table table-bordered align-middle">
-                        <thead class="table-dark"><tr><th>Libro</th><th>Precio</th><th>Cant.</th><th>Subtotal</th><th>X</th></tr></thead>
-                        <tbody>
-                            <tr th:if="${#lists.isEmpty(carrito)}"><td colspan="5" class="text-center">Carrito vacío</td></tr>
-                            <tr th:each="item : ${carrito}">
-                                <td>
-                                    <img th:if="${item.imagen}" th:src="@{${item.imagen}}" width="50" class="me-2">
-                                    <span th:text="${item.titulo}"></span>
-                                </td>
-                                <td th:text="${item.precio}"></td>
-                                <td>
-                                    <form th:action="@{/carrito/actualizar-cantidad}" method="post">
-                                        <input type="hidden" name="itemId" th:value="${item.id}">
-                                        <input type="number" name="cantidad" th:value="${item.cantidad}" class="form-control form-control-sm" style="width:70px" onchange="this.form.submit()">
-                                    </form>
-                                </td>
-                                <td th:text="${item.precio * item.cantidad}"></td>
-                                <td>
-                                    <form th:action="@{/carrito/eliminar/{id}(id=${item.id})}" method="post">
-                                        <button class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button>
-                                    </form>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div th:each="item : ${carrito}" class="cart-item-card">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <img th:if="${item.imagen}" th:src="@{${item.imagen}}" class="item-image" alt="Libro">
+                        </div>
+                        <div class="col">
+                            <div class="item-info">
+                                <h5 th:text="${item.titulo}"></h5>
+                                <p class="text-muted mb-2" style="font-size: 0.9rem;">
+                                    <i class="bi bi-book"></i> Libro
+                                </p>
+                                <div class="item-price">S/. <span th:text="${#numbers.formatDecimal(item.precio,1,2)}"></span></div>
+                            </div>
+                        </div>
+                        <div class="col-auto text-center">
+                            <label class="form-label mb-2" style="font-size: 0.85rem; color: #666;">Cantidad</label>
+                            <form th:action="@{/carrito/actualizar-cantidad}" method="post" class="d-inline">
+                                <input type="hidden" name="itemId" th:value="${item.id}">
+                                <input type="number" name="cantidad" th:value="${item.cantidad}" class="form-control cantidad-input" min="1" onchange="this.form.submit()">
+                            </form>
+                        </div>
+                        <div class="col-auto text-end">
+                            <div style="margin-bottom: 25px;">
+                                <span style="font-size: 0.85rem; color: #666;">Subtotal</span>
+                                <div style="font-size: 1.2rem; font-weight: 700; color: var(--color-primary);">
+                                    S/. <span th:text="${#numbers.formatDecimal(item.precio * item.cantidad,1,2)}"></span>
+                                </div>
+                            </div>
+                            <form th:action="@{/carrito/eliminar/{id}(id=${item.id})}" method="post" class="d-inline">
+                                <button type="submit" class="btn btn-remove">
+                                    <i class="bi bi-trash"></i> Eliminar
+                                </button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <a th:href="@{/catalogo}" class="btn btn-outline-primary mt-3">Seguir Comprando</a>
-                <form th:action="@{/carrito/limpiar}" method="post" class="d-inline float-end mt-3">
-                    <button class="btn btn-warning" th:disabled="${#lists.isEmpty(carrito)}">Limpiar</button>
-                </form>
+
+                <div class="mt-4" style="display: flex; gap: 10px;">
+                    <a th:href="@{/catalogo}" class="btn btn-seguir">
+                        <i class="bi bi-arrow-left"></i> Seguir Comprando
+                    </a>
+                    <form th:action="@{/carrito/limpiar}" method="post" class="d-inline ms-auto">
+                        <button type="submit" class="btn btn-limpiar" th:disabled="${#lists.isEmpty(carrito)}">
+                            <i class="bi bi-trash"></i> Limpiar Carrito
+                        </button>
+                    </form>
+                </div>
             </div>
 
-            <div class="col-lg-4" th:if="${not #lists.isEmpty(carrito)}">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h5>Resumen</h5>
-                        <div class="d-flex justify-content-between"><span>Subtotal:</span><span th:text="${#numbers.formatDecimal(subtotal,1,2)}"></span></div>
-                        <div class="d-flex justify-content-between"><span>IGV (18%):</span><span th:text="${#numbers.formatDecimal(igv,1,2)}"></span></div>
-                        <hr><div class="d-flex justify-content-between fw-bold fs-5"><span>Total:</span><span th:text="${#numbers.formatDecimal(total,1,2)}"></span></div>
+            <div class="col-lg-4">
+                <div class="resumen-card">
+                    <h5><i class="bi bi-receipt"></i> Resumen de Compra</h5>
 
-                        <form th:action="@{/carrito/procesar}" th:object="${pedidoForm}" method="post" class="mt-3">
-                            <h6 class="mt-3">Datos de Envío</h6>
-                            <div class="mb-2"><input type="text" class="form-control" th:field="*{compradorNombre}" placeholder="Nombre Completo" required></div>
-                            <div class="mb-2"><input type="text" class="form-control" th:field="*{direccionEnvio}" placeholder="Dirección de Envío" required></div>
-                            <div class="mb-2"><input type="tel" class="form-control" th:field="*{compradorTelefono}" placeholder="Teléfono (9...)" pattern="^9[0-9]{8}$" required></div>
-                            
-                            <h6 class="mt-3">Pago con Tarjeta</h6>
-                            <div class="mb-2"><input type="text" class="form-control" th:field="*{numeroTarjeta}" placeholder="N° Tarjeta (16 dígitos)" pattern="[0-9]{16}" required></div>
-                            <div class="row">
-                                <div class="col"><input type="month" class="form-control" th:field="*{fechaVencimiento}" required></div>
-                                <div class="col"><input type="text" class="form-control" th:field="*{cvv}" placeholder="CVV" pattern="[0-9]{3,4}" required></div>
-                            </div>
-
-                            <button class="btn btn-success w-100 mt-3">Pagar S/. <span th:text="${#numbers.formatDecimal(total,1,2)}"></span></button>
-                            
-                            <div th:if="${#fields.hasAnyErrors()}" class="alert alert-danger mt-2 p-1 small">
-                                Error en los datos. Revise los campos.
-                            </div>
-                        </form>
+                    <div class="resumen-row">
+                        <span>Subtotal:</span>
+                        <span>S/. <span th:text="${#numbers.formatDecimal(subtotal,1,2)}"></span></span>
                     </div>
+                    <div class="resumen-row">
+                        <span>IGV (18%):</span>
+                        <span style="color: var(--color-danger);">+ S/. <span th:text="${#numbers.formatDecimal(igv,1,2)}"></span></span>
+                    </div>
+
+                    <div class="resumen-row total">
+                        <span>TOTAL:</span>
+                        <span>S/. <span th:text="${#numbers.formatDecimal(total,1,2)}"></span></span>
+                    </div>
+
+                    <form th:action="@{/carrito/procesar}" th:object="${pedidoForm}" method="post">
+                        <!-- Datos de Envío -->
+                        <div class="form-section">
+                            <h6><i class="bi bi-truck"></i> Datos de Envío</h6>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" th:field="*{compradorNombre}" placeholder="Nombre Completo" required>
+                                <small class="text-muted">Ej: Juan Pérez</small>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" th:field="*{direccionEnvio}" placeholder="Dirección de Envío" required>
+                                <small class="text-muted">Calle, número, departamento</small>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" th:field="*{compradorTelefono}" placeholder="Teléfono (9xxxxxxxx)" pattern="^9[0-9]{8}$" required>
+                                <small class="text-muted">Formato: 9xxxxxxxx</small>
+                            </div>
+                        </div>
+
+                        <!-- Pago con Tarjeta -->
+                        <div class="form-section">
+                            <h6><i class="bi bi-credit-card"></i> Datos de Pago</h6>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" th:field="*{numeroTarjeta}" placeholder="N° Tarjeta (16 dígitos)" pattern="[0-9]{16}" required>
+                                <small class="text-muted">16 dígitos sin espacios</small>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 mb-3">
+                                    <input type="month" class="form-control" th:field="*{fechaVencimiento}" required>
+                                    <small class="text-muted">MM/YYYY</small>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <input type="text" class="form-control" th:field="*{cvv}" placeholder="CVV" pattern="[0-9]{3,4}" required>
+                                    <small class="text-muted">3-4 dígitos</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-pagar">
+                            <i class="bi bi-check-circle"></i> Confirmar Compra - S/. <span th:text="${#numbers.formatDecimal(total,1,2)}"></span>
+                        </button>
+
+                        <div th:if="${#fields.hasAnyErrors()}" class="alert alert-danger mt-3">
+                            <i class="bi bi-exclamation-circle"></i> Error en los datos. Revise los campos marcados.
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </main>
+
     <div th:replace="~{fragmentos/footer :: footer}"></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Validación de tarjeta
+        document.addEventListener('DOMContentLoaded', function() {
+            const numeroTarjeta = document.querySelector('input[name="numeroTarjeta"]');
+            if (numeroTarjeta) {
+                numeroTarjeta.addEventListener('input', function(e) {
+                    this.value = this.value.replace(/\D/g, '').substring(0, 16);
+                });
+            }
+
+            const cvv = document.querySelector('input[name="cvv"]');
+            if (cvv) {
+                cvv.addEventListener('input', function(e) {
+                    this.value = this.value.replace(/\D/g, '').substring(0, 4);
+                });
+            }
+
+            const telefono = document.querySelector('input[name="compradorTelefono"]');
+            if (telefono) {
+                telefono.addEventListener('input', function(e) {
+                    this.value = this.value.replace(/\D/g, '').substring(0, 9);
+                });
+            }
+        });
+    </script>
 </body>
 </html>
