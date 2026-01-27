@@ -49,7 +49,28 @@ VALUES (
     TRUE, 
     1 -- Rol PUBLICADOR
 )
+
 ON DUPLICATE KEY UPDATE 
     password='$2a$10$kMZb/F.TT176gLikAyWVnuANaFQxBrp6vOOaTHFfbEeQaJwNhbNyu', 
     rol_id=1, 
+    activo=TRUE;
+
+    INSERT INTO usuarios (nombre, apellidos, tipo_documento, numero_documento, telefono, genero, cumpleanos, email, password, activo, rol_id)
+VALUES (
+    'UsuarioPrueba', 
+    'Usuario1', 
+    'DNI', 
+    '12312312', 
+    '987654321', 
+    'Otro', 
+    '2000-01-01', 
+    'usuario1@lecturasana.com', 
+    '$2a$10$kMZb/F.TT176gLikAyWVnuANaFQxBrp6vOOaTHFfbEeQaJwNhbNyu',  -- Hash de "admin123"
+    TRUE, 
+    2 -- Rol PUBLICADOR
+)
+
+ON DUPLICATE KEY UPDATE 
+    password='$2a$10$kMZb/F.TT176gLikAyWVnuANaFQxBrp6vOOaTHFfbEeQaJwNhbNyu', 
+    rol_id=2, 
     activo=TRUE;
