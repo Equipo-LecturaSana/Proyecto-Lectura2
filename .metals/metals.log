@@ -12,3 +12,457 @@ ene. 26, 2026 7:14:16 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCance
 ADVERTENCIA: Unmatched cancel notification for request id 4
 ene. 26, 2026 7:14:16 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 ADVERTENCIA: Unmatched cancel notification for request id 1
+2026.01.26 19:14:17 WARN  no build tool detected in workspace 'C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2026.01.26 19:14:17 WARN  Build server is not auto-connectable.
+2026.01.26 19:14:17 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java
+2026.01.26 19:14:18 WARN  Running javac-semanticdb failed for file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/LecturaSanaApplication.java. Output:
+
+ene. 26, 2026 7:15:25 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
+2026.01.26 19:22:03 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.01.26 19:22:04 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\PerfilController.java
+2026.01.26 19:22:05 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\PerfilController.java. Using fallback presentation compiler.
+2026.01.26 19:22:06 WARN  Running javac-semanticdb failed for file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/controller/PerfilController.java. Output:
+
+2026.01.26 19:22:08 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\PerfilController.java. Using fallback presentation compiler.
+2026.01.26 19:22:09 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\PerfilController.java. Using fallback presentation compiler.
+2026.01.26 19:22:14 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\PerfilController.java. Using fallback presentation compiler.
+2026.01.26 19:22:15 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\PerfilController.java. Using fallback presentation compiler.
+ene. 26, 2026 7:22:16 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 13
+2026.01.26 19:22:15 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\PerfilController.java. Using fallback presentation compiler.
+ene. 26, 2026 7:22:17 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 9
+ene. 26, 2026 7:22:17 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 6
+2026.01.26 19:22:17 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\PerfilController.java. Using fallback presentation compiler.
+ene. 26, 2026 7:22:17 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 18
+2026.01.26 19:22:17 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\PerfilController.java. Using fallback presentation compiler.
+ene. 26, 2026 7:22:18 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 21
+2026.01.26 19:22:17 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\PerfilController.java. Using fallback presentation compiler.
+2026.01.26 19:22:18 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\PerfilController.java. Using fallback presentation compiler.
+2026.01.26 19:22:21 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\PerfilController.java. Using fallback presentation compiler.
+2026.01.26 19:23:48 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\PerfilController.java. Using fallback presentation compiler.
+2026.01.26 19:23:48 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\PerfilController.java. Using fallback presentation compiler.
+ene. 26, 2026 7:24:46 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
+ene. 26, 2026 7:24:48 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
+2026.01.26 21:04:34 INFO  Shutting down server
+2026.01.26 21:04:34 INFO  Memory monitor stopped
+2026.01.26 21:04:34 INFO  shutting down Metals
+2026.01.26 22:41:12 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\.metals\lsp.trace.json or C:\Users\Usuario\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2026.01.26 22:41:16 INFO  logging to files C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\.metals\metals.log
+2026.01.26 22:41:16 INFO  Started: Metals version 1.6.5 in folders 'C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2' for client Visual Studio Code 1.108.2.
+2026.01.26 22:41:16 INFO  Memory monitor started
+2026.01.26 22:41:19 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.01.26 22:41:19 WARN  no build tool detected in workspace 'C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2026.01.26 22:41:20 WARN  Build server is not auto-connectable.
+2026.01.26 22:45:00 INFO  Shutting down server
+2026.01.26 22:45:00 INFO  Memory monitor stopped
+2026.01.26 22:45:00 INFO  shutting down Metals
+2026.01.26 22:45:00 INFO  Exiting server
+2026.01.29 17:10:44 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\.metals\lsp.trace.json or C:\Users\Usuario\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2026.01.29 17:10:48 INFO  logging to files C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\.metals\metals.log
+2026.01.29 17:10:48 INFO  Started: Metals version 1.6.5 in folders 'C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2' for client Visual Studio Code 1.108.2.
+2026.01.29 17:10:48 INFO  Memory monitor started
+2026.01.29 17:10:52 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.01.29 17:10:53 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.01.29 17:10:56 WARN  no build tool detected in workspace 'C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2026.01.29 17:10:56 WARN  Build server is not auto-connectable.
+2026.01.29 17:10:56 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java
+2026.01.29 17:10:57 WARN  Running javac-semanticdb failed for file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/LecturaSanaApplication.java. Output:
+
+2026.01.29 17:10:57 INFO  time: code lens generation in 1.32s
+2026.01.29 17:11:00 INFO  restarted 1 presentation compiler
+2026.01.29 17:11:20 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.01.29 17:11:20 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+ene. 29, 2026 5:11:20 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 9
+ene. 29, 2026 5:11:20 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 10
+2026.01.29 17:11:20 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.01.29 17:11:20 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.01.29 17:11:26 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.01.29 17:11:27 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+ene. 29, 2026 5:11:31 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 19
+2026.01.29 17:11:39 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.01.29 17:11:39 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+ene. 29, 2026 5:11:39 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 22
+2026.01.29 17:11:49 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+ene. 29, 2026 5:11:55 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
+2026.01.29 17:12:20 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.01.29 17:12:21 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.01.29 17:12:24 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.01.29 17:18:53 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.01.29 17:18:54 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.01.29 17:18:55 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.01.29 17:18:58 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.01.29 17:19:03 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.01.29 17:19:03 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.01.29 17:19:03 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.01.29 17:19:04 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java
+2026.01.29 17:19:04 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.01.29 17:19:04 WARN  Running javac-semanticdb failed for file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/LecturaSanaApplication.java. Output:
+
+2026.01.29 17:19:05 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.01.29 17:19:06 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.01.29 17:19:08 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.01.29 17:56:25 INFO  Shutting down server
+2026.01.29 17:56:25 INFO  Memory monitor stopped
+2026.01.29 17:56:25 INFO  shutting down Metals
+2026.02.07 10:23:52 INFO  Started: Metals version 1.6.5 in folders 'C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2' for client Visual Studio Code 1.109.0.
+2026.02.07 10:23:52 INFO  Memory monitor started
+2026.02.07 10:23:59 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.02.07 10:24:00 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 10:24:01 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 10:24:01 WARN  no build tool detected in workspace 'C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2026.02.07 10:24:01 WARN  Build server is not auto-connectable.
+2026.02.07 10:24:01 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java
+2026.02.07 10:24:01 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java
+2026.02.07 10:24:01 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 10:24:03 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 10:24:04 WARN  Running javac-semanticdb failed for file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/service/PedidoService.java. Output:
+
+2026.02.07 10:24:04 INFO  time: code lens generation in 2.33s
+2026.02.07 10:24:04 WARN  Running javac-semanticdb failed for file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/LecturaSanaApplication.java. Output:
+
+2026.02.07 10:24:19 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+feb. 07, 2026 10:24:20 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 10
+2026.02.07 10:24:19 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 10:24:19 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+feb. 07, 2026 10:24:20 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 11
+feb. 07, 2026 10:24:20 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 12
+2026.02.07 10:24:19 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 10:24:21 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 10:24:24 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 10:24:27 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+feb. 07, 2026 10:24:39 A. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
+2026.02.07 10:25:02 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 10:25:02 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 10:25:04 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:01:21 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:01:27 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:01:27 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:27 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:27 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:28 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:28 WARN  Running javac-semanticdb failed for file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/service/PedidoService.java. Output:
+
+2026.02.07 11:16:30 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java
+2026.02.07 11:16:30 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:30 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:30 INFO  Created report: Optional[file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/service/PedidoService.java]
+2026.02.07 11:16:30 INFO  QDox parse error in file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/service/PedidoService.java (full report at: "C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\.metals\.reports\metals-full\2026-02-07\r_qdox-error_11-16-30-470.md")
+2026.02.07 11:16:30 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:31 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:31 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:31 WARN  Running javac-semanticdb failed for file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/service/PedidoService.java. Output:
+
+2026.02.07 11:16:31 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+feb. 07, 2026 11:16:32 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 56
+2026.02.07 11:16:32 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+feb. 07, 2026 11:16:33 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 55
+2026.02.07 11:16:32 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:33 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java
+2026.02.07 11:16:34 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:34 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:34 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+feb. 07, 2026 11:16:35 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 63
+2026.02.07 11:16:35 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:34 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:35 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:35 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:35 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:37 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:37 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+feb. 07, 2026 11:16:37 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 71
+2026.02.07 11:16:37 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+feb. 07, 2026 11:16:37 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 73
+2026.02.07 11:16:37 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:37 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:37 WARN  Running javac-semanticdb failed for file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/service/PedidoService.java. Output:
+
+2026.02.07 11:16:37 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:39 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:39 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java
+2026.02.07 11:16:39 INFO  QDox parse error in file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/service/PedidoService.java (full report at: "C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\.metals\.reports\metals-full\2026-02-07\r_qdox-error_11-16-30-470.md")
+2026.02.07 11:16:39 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:40 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:40 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:40 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:40 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:40 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:40 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:42 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:42 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:42 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:42 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:43 WARN  Running javac-semanticdb failed for file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/service/PedidoService.java. Output:
+
+2026.02.07 11:16:45 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:45 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:16:45 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+feb. 07, 2026 11:16:45 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 99
+2026.02.07 11:16:45 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java
+2026.02.07 11:16:46 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java
+2026.02.07 11:16:46 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.02.07 11:16:46 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.02.07 11:16:47 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.02.07 11:17:00 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.02.07 11:17:00 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+feb. 07, 2026 11:17:00 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 111
+2026.02.07 11:17:00 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.02.07 11:17:00 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.02.07 11:17:01 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:17:02 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.02.07 11:17:02 INFO  Created report: Optional[file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/LecturaSanaApplication.java]
+2026.02.07 11:17:02 INFO  empty definition using pc, found symbol in pc: _empty_/SpringApplication# (full report at: "C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\.metals\.reports\metals-full\2026-02-07\r_empty-definition_11-17-02-421.md")
+2026.02.07 11:17:04 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:17:04 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java
+2026.02.07 11:17:04 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:17:04 WARN  Running javac-semanticdb failed for file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/service/PedidoService.java. Output:
+
+2026.02.07 11:17:06 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:17:06 INFO  Created report: Optional[file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/service/PedidoService.java]
+2026.02.07 11:17:06 INFO  empty definition using pc, found symbol in pc: com/example/LecturaSana/repository/PedidoRepository# (full report at: "C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\.metals\.reports\metals-full\2026-02-07\r_empty-definition_11-17-06-660.md")
+2026.02.07 11:17:10 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:22:11 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java
+2026.02.07 11:22:11 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.02.07 11:22:11 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.02.07 11:22:11 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.02.07 11:22:45 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.02.07 11:22:45 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.02.07 11:22:47 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.02.07 11:22:47 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java
+2026.02.07 11:22:47 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:22:47 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:22:48 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.02.07 11:22:57 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\repository\PedidoRepository.java
+2026.02.07 11:22:57 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\repository\PedidoRepository.java. Using fallback presentation compiler.
+2026.02.07 11:22:58 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\repository\PedidoRepository.java. Using fallback presentation compiler.
+2026.02.07 11:22:58 WARN  Running javac-semanticdb failed for file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/repository/PedidoRepository.java. Output:
+
+2026.02.07 11:22:59 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\repository\PedidoRepository.java. Using fallback presentation compiler.
+2026.02.07 11:23:01 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\repository\PedidoRepository.java. Using fallback presentation compiler.
+2026.02.07 11:23:01 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\repository\PedidoRepository.java. Using fallback presentation compiler.
+2026.02.07 11:24:48 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\repository\PedidoRepository.java. Using fallback presentation compiler.
+2026.02.07 11:27:58 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\repository\CarritoItemRepository.java. Using fallback presentation compiler.
+2026.02.07 11:27:58 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\repository\CarritoItemRepository.java
+2026.02.07 11:27:59 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\repository\PedidoRepository.java. Using fallback presentation compiler.
+2026.02.07 11:27:59 WARN  Running javac-semanticdb failed for file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/repository/CarritoItemRepository.java. Output:
+
+2026.02.07 11:28:07 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\CarritoService.java
+2026.02.07 11:28:07 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\CarritoService.java. Using fallback presentation compiler.
+2026.02.07 11:28:07 WARN  Running javac-semanticdb failed for file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/service/CarritoService.java. Output:
+
+2026.02.07 11:28:07 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\repository\PedidoRepository.java. Using fallback presentation compiler.
+2026.02.07 11:28:29 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\model\CarritoItem.java
+2026.02.07 11:28:29 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\model\CarritoItem.java. Using fallback presentation compiler.
+2026.02.07 11:28:29 WARN  Running javac-semanticdb failed for file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/model/CarritoItem.java. Output:
+
+2026.02.07 11:28:29 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\repository\PedidoRepository.java. Using fallback presentation compiler.
+2026.02.07 11:28:34 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java
+2026.02.07 11:28:34 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.07 11:28:34 WARN  Running javac-semanticdb failed for file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/controller/CarritoController.java. Output:
+
+2026.02.07 11:28:34 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\repository\PedidoRepository.java. Using fallback presentation compiler.
+2026.02.07 11:28:38 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\model\CarritoItem.java. Using fallback presentation compiler.
+2026.02.07 11:28:38 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\model\CarritoItem.java
+2026.02.07 11:28:38 WARN  Running javac-semanticdb failed for file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/model/CarritoItem.java. Output:
+
+2026.02.07 11:28:38 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\repository\PedidoRepository.java. Using fallback presentation compiler.
+2026.02.07 11:28:43 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\repository\CarritoItemRepository.java
+2026.02.07 11:28:43 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\repository\CarritoItemRepository.java. Using fallback presentation compiler.
+2026.02.07 11:28:43 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\repository\PedidoRepository.java. Using fallback presentation compiler.
+2026.02.07 11:28:46 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\CarritoService.java
+2026.02.07 11:28:46 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\CarritoService.java. Using fallback presentation compiler.
+2026.02.07 11:28:46 WARN  Running javac-semanticdb failed for file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/service/CarritoService.java. Output:
+
+2026.02.07 11:28:46 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\repository\PedidoRepository.java. Using fallback presentation compiler.
+feb. 07, 2026 11:31:49 A. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
+2026.02.07 11:31:50 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\repository\PedidoRepository.java. Using fallback presentation compiler.
+2026.02.07 11:31:53 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\repository\PedidoRepository.java. Using fallback presentation compiler.
+2026.02.07 11:32:38 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\model\CarritoItem.java
+2026.02.07 11:32:38 WARN  Running javac-semanticdb failed for file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/model/CarritoItem.java. Output:
+
+2026.02.07 11:32:40 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\model\CarritoItem.java. Using fallback presentation compiler.
+2026.02.07 11:32:49 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\model\CarritoItem.java. Using fallback presentation compiler.
+2026.02.07 11:32:56 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\model\CarritoItem.java. Using fallback presentation compiler.
+feb. 07, 2026 11:33:07 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+ADVERTENCIA: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "chat-editing-snapshot-text-model:/c%3A/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/model/CarritoItem.java?%7B%22session%22%3A%7B%22%24mid%22%3A1%2C%22external%22%3A%22claude-code%3A%2Funtitled-e6b82a06-94c0-4479-805d-6dd077c2e87d%22%2C%22path%22%3A%22%2Funtitled-e6b82a06-94c0-4479-805d-6dd077c2e87d%22%2C%22scheme%22%3A%22claude-code%22%7D%2C%22requestId%22%3A%22request_3a6896a3-ace8-4a66-9237-531d19d20fad%22%2C%22undoStop%22%3A%22__epoch_9007199254740991%22%7D"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "chat-editing-snapshot-text-model" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:209)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:778)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:775)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:808)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2026.02.07 11:33:10 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\model\CarritoItem.java. Using fallback presentation compiler.
+2026.02.07 11:33:46 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\CarritoService.java
+2026.02.07 11:33:46 WARN  Running javac-semanticdb failed for file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/service/CarritoService.java. Output:
+
+2026.02.07 11:33:48 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\CarritoService.java. Using fallback presentation compiler.
+2026.02.07 11:33:53 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java
+2026.02.07 11:33:53 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.07 11:33:54 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.07 11:33:55 WARN  Running javac-semanticdb failed for file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/controller/CarritoController.java. Output:
+
+2026.02.07 11:33:55 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.07 11:34:01 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.07 11:34:03 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.07 11:34:03 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.07 11:34:05 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.07 11:34:07 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.07 11:34:17 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.07 11:34:19 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.07 11:34:19 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.07 11:34:22 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.07 11:34:28 WARN  Running javac-semanticdb failed for file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/controller/CarritoController.java. Output:
+
+feb. 07, 2026 11:34:31 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+ADVERTENCIA: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "chat-editing-snapshot-text-model:/c%3A/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/controller/CarritoController.java?%7B%22session%22%3A%7B%22%24mid%22%3A1%2C%22external%22%3A%22claude-code%3A%2Funtitled-e6b82a06-94c0-4479-805d-6dd077c2e87d%22%2C%22path%22%3A%22%2Funtitled-e6b82a06-94c0-4479-805d-6dd077c2e87d%22%2C%22scheme%22%3A%22claude-code%22%7D%2C%22requestId%22%3A%22request_3a6896a3-ace8-4a66-9237-531d19d20fad%22%2C%22undoStop%22%3A%22__epoch_9007199254740991%22%7D"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "chat-editing-snapshot-text-model" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:209)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:778)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:775)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:808)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2026.02.07 11:34:39 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+feb. 07, 2026 11:34:50 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+ADVERTENCIA: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "chat-editing-snapshot-text-model:/c%3A/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/controller/CarritoController.java?%7B%22session%22%3A%7B%22%24mid%22%3A1%2C%22external%22%3A%22claude-code%3A%2Funtitled-e6b82a06-94c0-4479-805d-6dd077c2e87d%22%2C%22path%22%3A%22%2Funtitled-e6b82a06-94c0-4479-805d-6dd077c2e87d%22%2C%22scheme%22%3A%22claude-code%22%7D%2C%22requestId%22%3A%22request_3a6896a3-ace8-4a66-9237-531d19d20fad%22%2C%22undoStop%22%3A%22__epoch_9007199254740991%22%7D"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "chat-editing-snapshot-text-model" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:209)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:778)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:775)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:808)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2026.02.07 11:35:04 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.07 11:35:23 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.07 11:35:27 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.07 11:35:27 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java
+2026.02.07 11:35:29 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.07 11:35:29 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.07 11:35:35 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.07 11:35:36 WARN  Running javac-semanticdb failed for file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/controller/CarritoController.java. Output:
+
+2026.02.07 11:35:36 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.07 11:36:54 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java
+2026.02.07 11:36:54 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.07 11:36:54 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.07 11:36:55 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.07 11:36:55 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.07 11:36:55 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.07 11:41:00 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.07 11:41:00 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.07 11:41:00 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.07 11:41:01 INFO  Created report: Optional[file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/controller/CarritoController.java]
+2026.02.07 11:41:01 INFO  Created report: Optional[file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/controller/CarritoController.java]
+2026.02.07 11:41:01 INFO  empty definition using pc, found symbol in pc: java/lang/Integer# (full report at: "C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\.metals\.reports\metals-full\2026-02-07\r_empty-definition_11-41-01-045.md")
+2026.02.07 11:41:01 INFO  empty definition using pc, found symbol in pc: _empty_/RequestParam# (full report at: "C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\.metals\.reports\metals-full\2026-02-07\r_empty-definition_11-41-01-046.md")
+2026.02.07 11:41:00 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.07 12:08:29 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\service\CarritoService.java
+2026.02.07 12:08:29 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\model\CarritoItem.java
+2026.02.07 12:08:29 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java
+2026.02.07 12:08:30 WARN  Running javac-semanticdb failed for file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/service/CarritoService.java. Output:
+
+2026.02.07 12:08:30 WARN  Running javac-semanticdb failed for file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/model/CarritoItem.java. Output:
+
+2026.02.07 12:09:11 INFO  Shutting down server
+2026.02.07 12:09:11 INFO  Memory monitor stopped
+2026.02.07 12:09:11 INFO  shutting down Metals
+2026.02.07 12:09:11 INFO  Exiting server

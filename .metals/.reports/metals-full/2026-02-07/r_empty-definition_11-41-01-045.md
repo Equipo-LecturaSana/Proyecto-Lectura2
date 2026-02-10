@@ -1,3 +1,14 @@
+error id: file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/controller/CarritoController.java:java/lang/Integer#
+file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/controller/CarritoController.java
+empty definition using pc, found symbol in pc: java/lang/Integer#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 10103
+uri: file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/controller/CarritoController.java
+text:
+```scala
 package com.example.LecturaSana.controller;
 
 import java.math.BigDecimal;
@@ -237,7 +248,7 @@ public class CarritoController {
     @PostMapping("/carrito/actualizar-cantidad")
     public String actualizarCantidad(
             @RequestParam Long itemId,
-            @RequestParam Integer cantidad,
+            @RequestParam I@@nteger cantidad,
             RedirectAttributes redirectAttributes) {
         try {
             carritoService.actualizarCantidad(itemId, cantidad);
@@ -289,3 +300,10 @@ public class CarritoController {
         return "redirect:/carrito";
     }
 }
+
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: java/lang/Integer#
