@@ -3,7 +3,7 @@ pipeline {
 
     tools {
         maven 'Maven 3.9.6'
-        // Si registraste JDK en Tools:
+        // Si registraste un JDK en Tools, puedes habilitarlo:
         // jdk 'JDK-17'
     }
 
@@ -14,52 +14,45 @@ pipeline {
             }
         }
 
-        // (Opcional) Diagnóstico para confirmar dónde está el pom.xml
+        // (Opcional pero útil) Mantengamos Diagnóstico una vez más
         stage('Diagnóstico') {
             steps {
                 sh '''
                   echo "Directorio actual:"; pwd
+                  echo "Contenido raíz:"; ls -la
                   echo "Buscando pom.xml (hasta 3 niveles):"
-                  find . -maxdepth 3 -name "pom.xml" -print
-                  echo "Listado de la carpeta con espacio:"
-                  ls -la "Lectura Sana xd" || true
+                  find . -maxdepth 3 -name pom.xml -print
                 '''
             }
         }
 
         stage('Compile') {
             steps {
-                // IMPORTANTE: entrar a la carpeta con espacio
-                dir('Lectura Sana xd') {
-                    sh 'mvn -B -DskipTests clean compile'
-                }
+                // Ejecutar en la RAÍZ (aquí está el pom.xml)
+                sh 'mvn -B -DskipTests clean compile'
             }
         }
 
         stage('Test') {
             steps {
-                dir('Lectura Sana xd') {
-                    sh 'mvn -B test'
-                }
+                sh 'mvn -B test'
             }
             post {
                 always {
-                    // Publicar resultados de JUnit desde la subcarpeta
-                    junit allowEmptyResults: true, testResults: 'Lectura Sana xd/target/surefire-reports/*.xml'
+                    // Reportes Surefire en la RAÍZ
+                    junit allowEmptyResults: true, testResults: 'target/surefire-reports/*.xml'
                 }
             }
         }
 
         stage('Package') {
             steps {
-                dir('Lectura Sana xd') {
-                    sh 'mvn -B -DskipTests package'
-                }
+                sh 'mvn -B -DskipTests package'
             }
             post {
                 success {
-                    // Archivar el .jar generado en la subcarpeta
-                    archiveArtifacts artifacts: 'Lectura Sana xd/target/*.jar', fingerprint: true
+                    // Artefactos generados en la RAÍZ
+                    archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
                 }
             }
         }
