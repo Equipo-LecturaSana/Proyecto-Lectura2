@@ -3,6 +3,8 @@ pipeline {
 
     tools {
         maven 'Maven 3.9.6'
+        // Si registraste JDK en Tools:
+        // jdk 'JDK-17'
     }
 
     stages {
@@ -12,26 +14,53 @@ pipeline {
             }
         }
 
+        // (Opcional) Diagnóstico para confirmar dónde está el pom.xml
+        stage('Diagnóstico') {
+            steps {
+                sh '''
+                  echo "Directorio actual:"; pwd
+                  echo "Buscando pom.xml (hasta 3 niveles):"
+                  find . -maxdepth 3 -name "pom.xml" -print
+                  echo "Listado de la carpeta con espacio:"
+                  ls -la "Lectura Sana xd" || true
+                '''
+            }
+        }
+
         stage('Compile') {
             steps {
-                sh 'mvn -B -DskipTests clean compile'
+                // IMPORTANTE: entrar a la carpeta con espacio
+                dir('Lectura Sana xd') {
+                    sh 'mvn -B -DskipTests clean compile'
+                }
             }
         }
 
         stage('Test') {
             steps {
-                sh 'mvn -B test'
+                dir('Lectura Sana xd') {
+                    sh 'mvn -B test'
+                }
             }
             post {
                 always {
-                    junit allowEmptyResults: true, testResults: 'target/surefire-reports/*.xml'
+                    // Publicar resultados de JUnit desde la subcarpeta
+                    junit allowEmptyResults: true, testResults: 'Lectura Sana xd/target/surefire-reports/*.xml'
                 }
             }
         }
 
         stage('Package') {
             steps {
-                sh 'mvn -B -DskipTests package'
+                dir('Lectura Sana xd') {
+                    sh 'mvn -B -DskipTests package'
+                }
+            }
+            post {
+                success {
+                    // Archivar el .jar generado en la subcarpeta
+                    archiveArtifacts artifacts: 'Lectura Sana xd/target/*.jar', fingerprint: true
+                }
             }
         }
     }
