@@ -7,11 +7,14 @@ pipeline {
         // jdk 'JDK-17'
     }
 
-   stage('Checkout') {
+    stages {
+       
+       stage('Checkout') {
             steps {
                 // Esto descargará automáticamente la rama correcta (sea main, pruebas, etc.)
                 checkout scm
             }
+       
         }
 
         // (Opcional pero útil) Mantengamos Diagnóstico una vez más
@@ -80,4 +83,4 @@ pipeline {
             """
         }
     }
-
+}
