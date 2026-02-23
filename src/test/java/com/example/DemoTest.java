@@ -7,6 +7,6 @@ class DemoTest {
 
     @Test
     void sumaBasica() {
-        assertEquals(4, 2 + 2); 
+        assertEquals(2, 2 + 2); 
     }
 }
