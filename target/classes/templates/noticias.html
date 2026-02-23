@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title th:text="'Noticias de ' + ${apartado}">Librería LecturaSana - Noticias</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" th:href="@{/css/style4.css}" />
+    <link rel="stylesheet" th:href="@{/css/footer.css}">
+    
+</head>
+<body>
+    
+    <div th:replace="~{fragmentos/navbar :: navbar}"></div>
+
+    <div class="container mt-3">
+        <div th:if="${mensajeExito}" class="alert alert-success alert-dismissible fade show" role="alert">
+            <span th:text="${mensajeExito}"></span>
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+        <div th:if="${mensajeError}" class="alert alert-danger alert-dismissible fade show" role="alert">
+            <span th:text="${mensajeError}"></span>
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    </div>
+    
+    <div th:if="${not #lists.isEmpty(noticias)}">
+        <div id="carouselNoticias" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner bg-dark">
+                <div th:each="noticia, iter : ${noticias}" 
+                     th:classappend="${iter.index == 0} ? 'carousel-item active' : 'carousel-item'">
+                    <img th:src="@{${noticia.imagen}}" class="d-block w-100 imagen-ajustada" 
+                         th:alt="${noticia.titulo}"
+                         onerror="this.src='https://via.placeholder.com/1200x400/343a40/ffffff?text=Sin+Imagen'">
+                    <div class="carousel-caption">
+                        <h3 th:text="${noticia.titulo}"></h3>
+                        <p th:text="${noticia.descripcion}"></p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselNoticias" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselNoticias" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            
+            <div class="container mt-4 fond">
+                <div th:each="noticia : ${noticias}" class="noticia-contenido mb-4 p-4 border rounded">
+                    <h3 th:text="${noticia.titulo}"></h3>
+                    <div class="contenido-completo">
+                        <p th:text="${noticia.contenido}"></p>
+                    </div>
+
+                    <div class="mt-3" sec:authorize="hasRole('PUBLICADOR')">
+                        <div class="btn-group">
+                            <a th:href="@{/admin/noticias/editar/{id}(id=${noticia.id})}" class="btn btn-sm btn-warning">
+                                <i class="bi bi-pencil-fill"></i> Editar
+                            </a>
+                            <form th:action="@{/admin/noticias/eliminar/{id}(id=${noticia.id})}" method="post" onsubmit="return confirm('¿Seguro que quieres eliminar esta noticia?');">
+                                <button type="submit" class="btn btn-sm btn-danger">
+                                    <i class="bi bi-trash-fill"></i> Eliminar
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div th:if="${#lists.isEmpty(noticias)}" class="container mt-5 text-center">
+        <div class="alert alert-info">
+            No hay noticias disponibles en esta categoría.
+        </div>
+        <a th:href="@{/novedades}" class="btn btn-primary">Volver a Novedades</a>
+    </div>
+
+    <div th:replace="~{fragmentos/footer :: footer}"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

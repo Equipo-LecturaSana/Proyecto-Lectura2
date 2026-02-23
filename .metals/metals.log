@@ -643,3 +643,67 @@ INFORMACIÓN: Unsupported notification method: $/setTrace
 2026.02.10 08:34:05 INFO  Memory monitor stopped
 2026.02.10 08:34:05 INFO  shutting down Metals
 2026.02.10 08:34:05 INFO  Exiting server
+2026.02.22 22:48:16 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\.metals\lsp.trace.json or C:\Users\Usuario\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2026.02.22 22:48:25 INFO  logging to files C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\.metals\metals.log
+2026.02.22 22:48:25 INFO  Started: Metals version 1.6.5 in folders 'C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2' for client Visual Studio Code 1.109.5.
+2026.02.22 22:48:25 INFO  time: initialize in 0.14s
+2026.02.22 22:48:25 INFO  Memory monitor started
+2026.02.22 22:48:28 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.02.22 22:48:30 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+feb. 22, 2026 10:48:31 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 1
+2026.02.22 22:48:32 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+feb. 22, 2026 10:48:32 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 3
+2026.02.22 22:48:32 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.22 22:48:33 WARN  no build tool detected in workspace 'C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2026.02.22 22:48:32 WARN  Build server is not auto-connectable.
+2026.02.22 22:48:33 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java
+2026.02.22 22:48:38 WARN  Running javac-semanticdb failed for file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/Lectura%20Sana%20xd/LecturaSana/src/main/java/com/example/LecturaSana/controller/CarritoController.java. Output:
+
+2026.02.22 22:48:38 INFO  time: code lens generation in 4.88s
+2026.02.22 22:48:38 INFO  time: code lens generation in 4.88s
+feb. 22, 2026 10:48:50 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
+2026.02.22 22:48:50 INFO  Detected new build tool in C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2
+2026.02.22 22:48:53 INFO  no build target found for c:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.22 22:48:54 INFO  no build target found for c:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.22 22:48:57 INFO  no build target found for c:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+feb. 22, 2026 10:48:57 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 20
+2026.02.22 22:48:57 INFO  no build target found for c:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.22 22:48:57 INFO  no build target found for c:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.22 22:48:57 INFO  no build target found for c:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+feb. 22, 2026 10:48:58 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 21
+feb. 22, 2026 10:48:58 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 22
+feb. 22, 2026 10:49:02 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
+2026.02.22 22:49:02 INFO  no build target found for c:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.22 22:49:02 INFO  no build target found for c:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.02.22 22:49:03 INFO  no build target found for c:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+feb. 22, 2026 10:49:06 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 28
+2026.02.22 22:49:07 INFO  no build target found for c:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\Lectura Sana xd\LecturaSana\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+feb. 22, 2026 10:49:07 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 29
+feb. 22, 2026 11:01:40 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
+feb. 22, 2026 11:03:24 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
+feb. 22, 2026 11:11:15 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
+feb. 22, 2026 11:12:36 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
+feb. 22, 2026 11:12:56 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
+2026.02.22 23:13:38 INFO  skipping build import with status 'Dismissed'
+feb. 22, 2026 11:24:54 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
+feb. 22, 2026 11:26:34 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
+feb. 22, 2026 11:26:41 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
+feb. 22, 2026 11:27:31 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace

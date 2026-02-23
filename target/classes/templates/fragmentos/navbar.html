@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <head>
+        <meta charset="UTF-8">
+        
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" 
+             th:fragment="navbar" 
+             xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+            <div class="container-fluid">
+                <a class="navbar-brand" th:href="@{/}">Librería LecturaSana</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" th:href="@{/}">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" th:href="@{/catalogo}">Catálogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" th:href="@{/novedades}">Novedades</a> 
+                        </li>
+
+                        <li class="nav-item" sec:authorize="hasRole('PUBLICADOR')">
+                            <a class="nav-link text-primary fw-bold" th:href="@{/libros/nuevo}">
+                                <i class="bi bi-book"></i> Nuevo Libro
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item" sec:authorize="hasRole('PUBLICADOR')">
+                            <a class="nav-link text-success fw-bold" th:href="@{/admin/novedades/nuevo}">
+                                <i class="bi bi-folder-plus"></i> Nueva Novedad
+                            </a>
+                        </li>
+
+                        <li class="nav-item" sec:authorize="hasRole('PUBLICADOR')">
+                            <a class="nav-link text-info fw-bold" th:href="@{/admin/noticias/nuevo}">
+                                <i class="bi bi-newspaper"></i> Nueva Noticia
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="navbar-nav ms-auto d-flex align-items-center">
+
+                        <li class="nav-item dropdown" sec:authorize="isAuthenticated()">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownUsuario" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-fill"></i>
+                                <span sec:authentication="name">Usuario</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownUsuario">
+                                <li><a class="dropdown-item" th:href="@{/perfil}">Mi perfil</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <form th:action="@{/auth/logout}" method="post" class="d-inline">
+                                        <button type="submit" class="dropdown-item">Cerrar sesión</button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item" sec:authorize="!isAuthenticated()">
+                            <a class="nav-link" th:href="@{/auth/login}">
+                                <i class="bi bi-box-arrow-in-right"></i> Login
+                            </a>
+                        </li>
+
+                        <li class="nav-item" sec:authorize="!isAuthenticated()">
+                            <a class="btn btn-primary btn-sm" th:href="@{/registro}">
+                                Registrate
+                            </a>
+                        </li>
+
+                        <li class="nav-item" sec:authorize="!hasRole('PUBLICADOR')">
+                            <a class="nav-link" th:href="@{/carrito}">
+                                <i class="bi bi-cart-fill"></i> Carrito
+                                <span class="badge bg-danger" id="carrito-contador">0</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </body>
+</html>
