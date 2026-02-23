@@ -45,12 +45,7 @@ pipeline {
             steps {
                 script {
                     withSonarQubeEnv('LecturaSana-Sonar') {
-                        sh '''
-                          sonar-scanner \
-                            -Dsonar.projectKey=LecturaSana \
-                            -Dsonar.projectName=LecturaSana \
-                            -Dsonar.sources=.
-                        '''
+                        sh 'mvn sonar:sonar -Dsonar.projectKey=LecturaSana'
                     }
                 }
             }
