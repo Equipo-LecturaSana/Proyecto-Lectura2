@@ -7,10 +7,10 @@ pipeline {
         // jdk 'JDK-17'
     }
 
-    stages {
-        stage('Checkout') {
+   stage('Checkout') {
             steps {
-                git branch: 'pruebas-pipeline', url: 'https://github.com/Equipo-LecturaSana/Proyecto-Lectura2.git'
+                // Esto descargará automáticamente la rama correcta (sea main, pruebas, etc.)
+                checkout scm
             }
         }
 
