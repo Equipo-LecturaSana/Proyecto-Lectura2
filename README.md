@@ -1,5 +1,7 @@
 # 📚 Proyecto Lectura Sana
 
+[![Build Status](http://3.140.188.231:8080/buildStatus/icon?job=pruebas-pipeline)](http://3.140.188.231:8080/job/pruebas-pipeline/)
+
 Este proyecto desarrolla una plataforma innovadora para la gestión y promoción de la lectura, priorizando la experiencia del usuario y el acceso a contenidos literarios de calidad y accesibles a el publico en general.
 
 ## 👥 Integrantes

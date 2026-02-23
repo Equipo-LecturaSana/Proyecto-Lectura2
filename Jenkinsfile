@@ -7,10 +7,13 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
+       
+       stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/Equipo-LecturaSana/Proyecto-Lectura2.git'
+                // Esto descargará automáticamente la rama correcta (sea main, pruebas, etc.)
+                checkout scm
             }
+       
         }
 
         stage('Diagnóstico') {
@@ -77,8 +80,25 @@ pipeline {
     }
 
     post {
-        always {
-            echo 'Pipeline completado.'
+        failure {
+            echo '❌ El pipeline falló. Notificando a Discord...'
+            
+            // Reemplaza TU_URL_DEL_WEBHOOK con el enlace que copiaste en el Paso 1
+            sh """
+                curl -H "Content-Type: application/json" \\
+                     -d '{"content": "🚨 **¡Alerta Equipo!** El build de *Lectura Sana* acaba de fallar. ❌\\nRevisen el código para arreglarlo."}' \\
+                     https://discord.com/api/webhooks/1475567824637394974/8IcAQSusCm8vz0J-aIWF12stQxi0NKQCS2--CVCXOARhVM3xXU5esa98whb5l6aZddlk
+            """
+        }
+        success {
+            echo '✅ Pipeline exitoso. Notificando a Discord...'
+            
+            // Opcional: Un mensaje de que todo salió bien
+            sh """
+                curl -H "Content-Type: application/json" \\
+                     -d '{"content": "✅ **¡Éxito!** El nuevo código compiló y pasó las pruebas perfectamente."}' \\
+                     https://discord.com/api/webhooks/1475567824637394974/8IcAQSusCm8vz0J-aIWF12stQxi0NKQCS2--CVCXOARhVM3xXU5esa98whb5l6aZddlk
+            """
         }
     }
 }
