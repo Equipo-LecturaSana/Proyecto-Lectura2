@@ -14,7 +14,6 @@ pipeline {
             }
         }
 
-        // (Opcional pero útil) Mantengamos Diagnóstico una vez más
         stage('Diagnóstico') {
             steps {
                 sh '''
@@ -28,7 +27,6 @@ pipeline {
 
         stage('Compile') {
             steps {
-                // Ejecutar en la RAÍZ (aquí está el pom.xml)
                 sh 'mvn -B -DskipTests clean compile'
             }
         }
@@ -39,8 +37,18 @@ pipeline {
             }
             post {
                 always {
-                    // Reportes Surefire en la RAÍZ
                     junit allowEmptyResults: true, testResults: 'target/surefire-reports/*.xml'
+                }
+            }
+        }
+
+        //  Nueva etapa para SonarQube
+        stage('SonarQube Analysis') {
+            steps {
+                script {
+                    withSonarQubeEnv('LecturaSana-Sonar') {
+                        sh 'sonar-scanner'
+                    }
                 }
             }
         }
@@ -51,7 +59,6 @@ pipeline {
             }
             post {
                 success {
-                    // Artefactos generados en la RAÍZ
                     archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
                 }
             }
