@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/Equipo-LecturaSana/Proyecto-Lectura2.git'
+                git branch: 'pruebas-pipeline', url: 'https://github.com/Equipo-LecturaSana/Proyecto-Lectura2.git'
             }
         }
 
