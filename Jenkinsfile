@@ -44,6 +44,7 @@ pipeline {
         stage('SonarQube Analysis') {
             steps {
                 script {
+                    // Aquí se usa el nombre configurado en Manage Jenkins → Configure System → SonarQube servers
                     withSonarQubeEnv('LecturaSana-Sonar') {
                         sh 'mvn sonar:sonar -Dsonar.projectKey=LecturaSana'
                     }
@@ -54,6 +55,7 @@ pipeline {
         stage('Quality Gate') {
             steps {
                 timeout(time: 1, unit: 'HOURS') {
+                    // Esta línea consulta el resultado del análisis en SonarQube
                     waitForQualityGate abortPipeline: true
                 }
             }
