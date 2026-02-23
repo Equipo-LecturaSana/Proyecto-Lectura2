@@ -3,8 +3,7 @@ pipeline {
 
     tools {
         maven 'Maven 3.9.6'
-        // Si registraste un JDK en Tools, puedes habilitarlo:
-        // jdk 'JDK-17'
+        jdk 'JDK-17'
     }
 
     stages {
@@ -42,13 +41,25 @@ pipeline {
             }
         }
 
-        //  Nueva etapa para SonarQube
         stage('SonarQube Analysis') {
             steps {
                 script {
                     withSonarQubeEnv('LecturaSana-Sonar') {
-                        sh 'sonar-scanner'
+                        sh '''
+                          sonar-scanner \
+                            -Dsonar.projectKey=LecturaSana \
+                            -Dsonar.projectName=LecturaSana \
+                            -Dsonar.sources=.
+                        '''
                     }
+                }
+            }
+        }
+
+        stage('Quality Gate') {
+            steps {
+                timeout(time: 1, unit: 'HOURS') {
+                    waitForQualityGate abortPipeline: true
                 }
             }
         }
