@@ -71,16 +71,15 @@ pipeline {
             }
         }
 
-       stage('Deploy') {
+        stage('Deploy') {
             steps {
                 script {
                     echo '🚀 Lanzando aplicación en puerto 8081 de forma permanente...'
                     
-                    // 1. Limpiar el puerto 8081 por si quedó algo colgado
+                    // 1. Limpiar el puerto 8081
                     sh 'sudo fuser -k 8081/tcp || true'
                     
-                    // 2. El comando MÁGICO: JENKINS_NODE_COOKIE=dontKillMe
-                    // Esto le dice a Jenkins: "No mates este proceso cuando termines"
+                    // 2. Variable para que Jenkins no mate el proceso al terminar el pipeline
                     withEnv(['JENKINS_NODE_COOKIE=dontKillMe']) {
                         sh 'nohup java -jar target/LecturaSana-0.0.1-SNAPSHOT.jar --server.port=8081 > deploy.log 2>&1 &'
                     }
@@ -90,6 +89,7 @@ pipeline {
                 }
             }
         }
+    } // <--- ESTA ES LA LLAVE QUE FALTABA PARA CERRAR "STAGES"
 
     post { 
         failure {
