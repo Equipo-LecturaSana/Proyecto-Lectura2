@@ -105,7 +105,7 @@ pipeline {
             echo '✅ Pipeline y Deploy exitosos. Notificando a Discord...'
             sh '''
                 curl -H "Content-Type: application/json" \
-                     -d "{\\"content\\": \\"🚀 **¡Despliegue Exitoso!**\\nEl proyecto *Lectura Sana* ya está actualizado y corriendo en:\\nhttp://3.140.188.231:8080\\n\\n✅ Pruebas y SonarQube aprobados.\\"}" \
+                     -d "{\\"content\\": \\"🚀 **¡Despliegue Exitoso!**\\nEl proyecto *Lectura Sana* ya está actualizado y corriendo en:\\nhttp://3.140.188.231:8081\\n\\n✅ Pruebas y SonarQube aprobados.\\"}" \
                      https://discord.com/api/webhooks/1475567824637394974/8IcAQSusCm8vz0J-aIWF12stQxi0NKQCS2--CVCXOARhVM3xXU5esa98whb5l6aZddlk
             '''
         }
