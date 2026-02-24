@@ -7,13 +7,11 @@ pipeline {
     }
 
     stages {
-       
-       stage('Checkout') {
+        
+        stage('Checkout') {
             steps {
-                // Esto descargará automáticamente la rama correcta (sea main, pruebas, etc.)
                 checkout scm
             }
-       
         }
 
         stage('Diagnóstico') {
@@ -21,7 +19,7 @@ pipeline {
                 sh '''
                   echo "Directorio actual:"; pwd
                   echo "Contenido raíz:"; ls -la
-                  echo "Buscando pom.xml (hasta 3 niveles):"
+                  echo "Buscando pom.xml:"
                   find . -maxdepth 3 -name pom.xml -print
                 '''
             }
@@ -47,7 +45,6 @@ pipeline {
         stage('SonarQube Analysis') {
             steps {
                 script {
-                    // Aquí se usa el nombre configurado en Manage Jenkins → Configure System → SonarQube servers
                     withSonarQubeEnv('LecturaSana-Sonar') {
                         sh 'mvn sonar:sonar -Dsonar.projectKey=LecturaSana'
                     }
@@ -58,7 +55,6 @@ pipeline {
         stage('Quality Gate') {
             steps {
                 timeout(time: 15, unit: 'MINUTES') {
-                    // Esta línea consulta el resultado del análisis en SonarQube
                     waitForQualityGate abortPipeline: true
                 }
             }
@@ -75,23 +71,23 @@ pipeline {
             }
         }
 
-       stage('Deploy') {
+        stage('Deploy') {
             steps {
                 script {
                     echo '🚀 Desplegando aplicación en puerto 8081...'
-                    // Liberar el puerto 8081 específicamente
+                    // Liberar el puerto 8081 (Requiere el comando NOPASSWD que te pasé antes)
                     sh 'sudo fuser -k 8081/tcp || true'
                     
-                    // Ejecutar el JAR asegurando que use el puerto 8081
-                    // Agregamos el parámetro --server.port=8081 por si acaso
+                    // Ejecutar el JAR forzando el puerto 8081
                     sh 'nohup java -jar target/LecturaSana-0.0.1-SNAPSHOT.jar --server.port=8081 > deploy.log 2>&1 &'
                     
                     echo '✅ Aplicación desplegada en http://3.140.188.231:8081'
                 }
             }
         }
+    } // <--- ESTA LLAVE CIERRA LOS STAGES (Faltaba en tu mensaje anterior)
 
-   post { // ESTE ES EL POST GLOBAL (El de Discord)
+    post { 
         failure {
             echo '❌ El pipeline falló. Notificando a Discord...'
             sh '''
@@ -109,4 +105,4 @@ pipeline {
             '''
         }
     }
-} // CIERRE FINAL DEL PIPELINE
+}
