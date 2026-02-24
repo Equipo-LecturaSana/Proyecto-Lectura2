@@ -75,22 +75,21 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
+       stage('Deploy') {
             steps {
                 script {
-                    echo '🚀 Desplegando aplicación...'
-                    // 1. Buscamos si ya hay un proceso corriendo en el puerto 8080 y lo detenemos
-                    sh 'sudo fuser -k 8080/tcp || true'
+                    echo '🚀 Desplegando aplicación en puerto 8081...'
+                    // Liberar el puerto 8081 específicamente
+                    sh 'sudo fuser -k 8081/tcp || true'
                     
-                    // 2. Ejecutamos el nuevo JAR en segundo plano (nohup)
-                    // Asegúrate de que el nombre del JAR coincida con el que genera tu pom.xml
-                    sh 'nohup java -jar target/LecturaSana-0.0.1-SNAPSHOT.jar > deploy.log 2>&1 &'
+                    // Ejecutar el JAR asegurando que use el puerto 8081
+                    // Agregamos el parámetro --server.port=8081 por si acaso
+                    sh 'nohup java -jar target/LecturaSana-0.0.1-SNAPSHOT.jar --server.port=8081 > deploy.log 2>&1 &'
                     
                     echo '✅ Aplicación desplegada en http://3.140.188.231:8081'
                 }
             }
         }
-    }
 
    post { // ESTE ES EL POST GLOBAL (El de Discord)
         failure {
