@@ -71,21 +71,25 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
+       stage('Deploy') {
             steps {
                 script {
-                    echo '🚀 Desplegando aplicación en puerto 8081...'
-                    // Liberar el puerto 8081 (Requiere el comando NOPASSWD que te pasé antes)
+                    echo '🚀 Lanzando aplicación en puerto 8081 de forma permanente...'
+                    
+                    // 1. Limpiar el puerto 8081 por si quedó algo colgado
                     sh 'sudo fuser -k 8081/tcp || true'
                     
-                    // Ejecutar el JAR forzando el puerto 8081
-                    sh 'nohup java -jar target/LecturaSana-0.0.1-SNAPSHOT.jar --server.port=8081 > deploy.log 2>&1 &'
+                    // 2. El comando MÁGICO: JENKINS_NODE_COOKIE=dontKillMe
+                    // Esto le dice a Jenkins: "No mates este proceso cuando termines"
+                    withEnv(['JENKINS_NODE_COOKIE=dontKillMe']) {
+                        sh 'nohup java -jar target/LecturaSana-0.0.1-SNAPSHOT.jar --server.port=8081 > deploy.log 2>&1 &'
+                    }
                     
-                    echo '✅ Aplicación desplegada en http://3.140.188.231:8081'
+                    echo '✅ Proceso iniciado exitosamente.'
+                    echo '🌍 Revisa tu app en: http://3.140.188.231:8081'
                 }
             }
         }
-    } // <--- ESTA LLAVE CIERRA LOS STAGES (Faltaba en tu mensaje anterior)
 
     post { 
         failure {
