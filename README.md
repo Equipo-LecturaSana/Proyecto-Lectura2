@@ -136,3 +136,5 @@ El proyecto **Lectura Sana** implementa una arquitectura multicapa que garantiza
 * **Seguridad y Estándares:** La adopción de Spring Security y Java 21 eleva el proyecto a estándares industriales, permitiendo una gestión de identidades segura y aprovechando las últimas mejoras de rendimiento del ecosistema Java..
 * **Eficiencia en la Configuración:** La integración exitosa entre **MySQL** y **VS Code** demuestra la importancia de un entorno de desarrollo bien configurado para evitar cuellos de botella técnicos.
 * **Valor de la Documentación:** Contar con un **README** detallado transforma un conjunto de archivos de código en un producto profesional y comprensible para cualquier desarrollador externo.
+* 
+Pipeline
