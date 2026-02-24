@@ -38,7 +38,7 @@
                          th:each="novedad : ${paginaNovedades.content}">
                         <div class="card h-100 shadow-sm" style="width:25rem;">
 
-                            <img th:src="@{${novedad.imagen}}" 
+                            <img th:src="@{${'/' + novedad.imagen}}" 
                                  class="card-img-top"
                                  style="height: 200px; object-fit: cover;"
                                  th:alt="${novedad.titulo}"
