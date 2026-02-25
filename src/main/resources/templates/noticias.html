@@ -31,7 +31,7 @@
             <div class="carousel-inner bg-dark">
                 <div th:each="noticia, iter : ${noticias}" 
                      th:classappend="${iter.index == 0} ? 'carousel-item active' : 'carousel-item'">
-                    <img th:src="@{${'/' + noticia.imagen}}" class="d-block w-100 imagen-ajustada" 
+                    <img th:src="@{${noticia.imagen}}" class="d-block w-100 imagen-ajustada" 
                          th:alt="${noticia.titulo}"
                          onerror="this.src='https://via.placeholder.com/1200x400/343a40/ffffff?text=Sin+Imagen'">
                     <div class="carousel-caption">
