@@ -25,7 +25,7 @@ INSERT INTO libros (id, titulo, autor, categoria, precio, imagen, sinopsis, gene
 (2, 'El Peso del Silencio', 'Laura Gallego', 'accion', 22.50, '/IMG/Imagen_Index/descarga (2).jpg', 'Una conmovedora historia sobre una familia...', 'Drama Familiar', 45, FALSE),
 (3, 'Bajo el Mismo Cielo', 'Isabel Keats', 'romance', 17.95, '/IMG/Imagen_Index/descarga (1).jpg', 'Dos almas destinadas a encontrarse...', 'Romance Contemporáneo', 60, TRUE),
 (4, 'Nexus Horizon', 'Daniel Cruz', 'ciencia-ficcion', 24.75, '/IMG/Imagen_Index/descarga (3).jpg', 'En un futuro donde la humanidad...', 'Ciencia Ficción', 35, TRUE),
-(5, 'El Heredero de los Reinos', 'Elena Montoya', 'fantasia', 21.99, '/IMG/Imagen_index/descarga (6).jpg', 'Un joven descubre que es el heredero...', 'Fantasía Épica', 40, TRUE),
+(5, 'El Heredero de los Reinos', 'Elena Montoya', 'fantasia', 21.99, '/IMG/Imagen_Index/descarga (6).jpg', 'Un joven descubre que es el heredero...', 'Fantasía Épica', 40, TRUE),
 (6, 'Susurros en la Oscuridad', 'Miguel Ángel Sánchez', 'terror', 18.50, '/IMG/Imagen_Index/descarga (4).jpg', 'Una casa abandonada con un pasado...', 'Terror Psicológico', 30, FALSE),
 (7, 'Vida Entre Pinceles', 'Clara Ruiz', 'biografia', 26.80, '/IMG/Imagen_Index/vida-pinceles.jpg', 'La fascinante vida de la pintora...', 'Biografía Artística', 25, TRUE),
 (8, 'Operación Cero', 'Carlos Mendoza', 'accion', 20.45, '/IMG/Imagen_Index/operacion-cero.jpg', 'Un agente secreto debe evitar...', 'Thriller de Espionaje', 55, FALSE),
