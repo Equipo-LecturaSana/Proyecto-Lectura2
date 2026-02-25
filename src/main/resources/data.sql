@@ -5,7 +5,7 @@ INSERT INTO roles (id, nombre) VALUES (2, 'VISOR') ON DUPLICATE KEY UPDATE id=id
 -- 2. INSERTAR TARJETAS DE NOVEDAD (Categorías)
 INSERT INTO tarjeta_novedad (id, titulo, descripcion, imagen, apartado) VALUES
 (1, 'Cómics', 'Noticias sobre cómics y sus autores', '/IMG/imagen_novedades/comics.jpg', 'comics'),
-(2, 'Cine', 'Últimas novedades del cine y sus películas', '/IMG/imagen_novedades/cine.jpg', 'cine'),
+(2, 'Cine', 'Últimas novedades del cine y sus películas', '/IMG/imagen_novedades/cine.JPG', 'cine'),
 (3, 'Mangas', 'Todo sobre el manga y anime japonés', '/IMG/imagen_novedades/mangas.jpg', 'mangas'),
 (4, 'Novelas', 'Clásicos y nuevos lanzamientos de literatura', '/IMG/imagen_novedades/novelas.jpg', 'novelas'),
 (5, 'Biografías', 'Historias reales que inspiran al mundo', '/IMG/imagen_novedades/biografias.jpg', 'biografias'),
