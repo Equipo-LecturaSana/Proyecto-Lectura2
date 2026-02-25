@@ -4,176 +4,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Usuario</title>
+    <title>Registro de Usuario - Librería</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <link rel="stylesheet" th:href="@{/css/footer.css}">
-        
+    <link rel="stylesheet" th:href="@{/css/registro.css}">
+    <link rel="stylesheet" th:href="@{/css/style.css}">   
+
+
 </head>
 
 <body>
-    <div th:replace="fragmentos/navbar :: navbar"></div>
+    <div th:replace="~{fragmentos/navbar :: navbar}"></div>
 
-    <div class="bg-gradient d-flex justify-content-center pt-5 pb-5">
-        <div class="bg-white p-5 rounded-5 text-secondary shadow w-100" style="max-width: 55rem;">
-            <div class="d-flex justify-content-center">
-                <img src="https://cdn-icons-png.flaticon.com/512/6681/6681204.png" alt="login-icon" style="height: 7rem;">
-            </div>
+    <div class="container d-flex flex-column align-items-center justify-content-center py-5">
 
-            <div class="text-center fs-1 fw-bold">REGÍSTRATE</div>
+        <div class="text-center mb-4">
+            <i class="bi bi-book-half" style="font-size: 3rem; color: #2F4F4F;"></i>
+            <h3 class="fw-light mt-3" style="letter-spacing: -0.5px;">Crea tu cuenta</h3>
+            <p class="text-muted small">Únete a nuestra librería para comenzar</p>
+        </div>
 
-            <div class="container mt-4">
-                <p class="text-center text-muted">Ingresa tus datos para crear una cuenta</p>
+        <div class="col-12 col-md-10 col-lg-8" style="max-width: 700px;">
 
-                <form class="row g-3" th:action="@{/procesar_registro}" th:object="${usuario}" method="POST" onsubmit="return validarFormulario();">
+            <form th:action="@{/procesar_registro}" th:object="${usuario}" method="POST"
+                onsubmit="return validarFormulario();">
 
-                    <div th:if="${#fields.hasAnyErrors()}" class="alert alert-danger" role="alert">
-                        Por favor, corrige los errores marcados en rojo.
-                    </div>
-                    <div th:if="${error}" class="alert alert-danger" role="alert" th:text="${error}">
-                    </div>
+                <div th:if="${#fields.hasAnyErrors()}" class="alert alert-danger py-2 px-3 mb-3 text-sm" role="alert"
+                    style="border-radius: 6px; font-size: 14px;">
+                    Por favor, corrige los errores marcados en rojo.
+                </div>
+                <div th:if="${error}" class="alert alert-danger py-2 px-3 mb-3" role="alert" th:text="${error}"
+                    style="border-radius: 6px; font-size: 14px;">
+                </div>
 
-                    <div class="col-12 col-md-6">
-                        <div class="input-group">
-                            <span class="input-group-text bg-white border-end-0">
-                                <img src="https://cdn-icons-png.freepik.com/512/6135/6135267.png" alt="nombre-icon" style="height: 2rem;">
-                            </span>
-                            <input type="text" class="form-control border-start-0" th:field="*{nombre}" placeholder="Nombre*" th:errorclass="is-invalid" required>
+                <div class="register-card p-4 p-md-5 shadow-sm">
+                    <div class="row g-3">
+
+                        <div class="col-12 col-md-6">
+                            <label for="nombre" class="form-label fw-semibold">Nombre *</label>
+                            <input type="text" class="form-control" id="nombre" th:field="*{nombre}"
+                                th:errorclass="is-invalid" required>
+                            <div class="invalid-feedback" th:if="${#fields.hasErrors('nombre')}" th:errors="*{nombre}">
+                            </div>
                         </div>
-                        <div class="invalid-feedback d-block" th:if="${#fields.hasErrors('nombre')}" th:errors="*{nombre}"></div>
-                    </div>
 
-                    <div class="col-12 col-md-6">
-                        <div class="input-group">
-                            <span class="input-group-text bg-white border-end-0">
-                                <img src="https://static.vecteezy.com/system/resources/previews/016/058/870/non_2x/line-icon-for-surname-vector.jpg" alt="apellidos-icon" style="height: 2rem;">
-                            </span>
-                            <input type="text" class="form-control border-start-0" th:field="*{apellidos}" placeholder="Apellidos*" th:errorclass="is-invalid" required>
+                        <div class="col-12 col-md-6">
+                            <label for="apellidos" class="form-label fw-semibold">Apellidos *</label>
+                            <input type="text" class="form-control" id="apellidos" th:field="*{apellidos}"
+                                th:errorclass="is-invalid" required>
+                            <div class="invalid-feedback" th:if="${#fields.hasErrors('apellidos')}"
+                                th:errors="*{apellidos}"></div>
                         </div>
-                        <div class="invalid-feedback d-block" th:if="${#fields.hasErrors('apellidos')}" th:errors="*{apellidos}"></div>
-                    </div>
 
-                    <div class="col-12 col-md-6">
-                        <div class="input-group">
-                            <span class="input-group-text bg-white border-end-0">
-                                <img src="https://media.istockphoto.com/id/1419375918/es/vector/icono-de-tarjeta-de-identificaci%C3%B3n-icono-de-identificaci%C3%B3n-de-la-licencia-de-conducir.jpg?s=612x612&w=0&k=20&c=RpMjklYqV4xsHg1ZXjPZIWgGycSpjrLR6iU4rtVfZ98=" alt="tipo-doc-icon" style="height: 2rem;">
-                            </span>
-                            <select class="form-select border-start-0" th:field="*{tipoDocumento}" th:errorclass="is-invalid" required>
-                                <option value="" disabled selected>Tipo de documento</option>
+                        <div class="col-12 col-md-6">
+                            <label for="tipoDocumento" class="form-label fw-semibold">Tipo de documento *</label>
+                            <select class="form-select" id="tipoDocumento" th:field="*{tipoDocumento}"
+                                th:errorclass="is-invalid" required>
+                                <option value="" disabled selected>Selecciona una opción</option>
                                 <option value="DNI">DNI</option>
                                 <option value="Pasaporte">Pasaporte</option>
                             </select>
+                            <div class="invalid-feedback" th:if="${#fields.hasErrors('tipoDocumento')}"
+                                th:errors="*{tipoDocumento}"></div>
                         </div>
-                        <div class="invalid-feedback d-block" th:if="${#fields.hasErrors('tipoDocumento')}" th:errors="*{tipoDocumento}"></div>
-                    </div>
 
-                    <div class="col-12 col-md-6">
-                        <div class="input-group">
-                            <span class="input-group-text bg-white border-end-0">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmV35f8kb0E2en_aSTvB3tgpw8TlSSgzKf9w&s" alt="num-doc-icon" style="height: 2rem;">
-                            </span>
-                            <input type="text" class="form-control border-start-0" th:field="*{numeroDocumento}" placeholder="Número de Documento (8 dígitos)" th:errorclass="is-invalid" required>
+                        <div class="col-12 col-md-6">
+                            <label for="numeroDocumento" class="form-label fw-semibold">Nº de Documento (8 dígitos)
+                                *</label>
+                            <input type="text" class="form-control" id="numeroDocumento" th:field="*{numeroDocumento}"
+                                th:errorclass="is-invalid" required>
+                            <div class="invalid-feedback" th:if="${#fields.hasErrors('numeroDocumento')}"
+                                th:errors="*{numeroDocumento}"></div>
                         </div>
-                        <div class="invalid-feedback d-block" th:if="${#fields.hasErrors('numeroDocumento')}" th:errors="*{numeroDocumento}"></div>
-                    </div>
 
-                    <div class="col-12 col-md-6">
-                        <div class="input-group">
-                            <span class="input-group-text bg-white border-end-0">
-                                <img src="https://cdn-icons-png.flaticon.com/512/5323/5323603.png" alt="telefono-icon" style="height: 2rem;">
-                            </span>
-                            <input type="text" class="form-control border-start-0" th:field="*{telefono}" placeholder="Teléfono (9 dígitos)" th:errorclass="is-invalid" required>
+                        <div class="col-12 col-md-6">
+                            <label for="telefono" class="form-label fw-semibold">Teléfono (9 dígitos) *</label>
+                            <input type="text" class="form-control" id="telefono" th:field="*{telefono}"
+                                th:errorclass="is-invalid" required>
+                            <div class="invalid-feedback" th:if="${#fields.hasErrors('telefono')}"
+                                th:errors="*{telefono}"></div>
                         </div>
-                         <div class="invalid-feedback d-block" th:if="${#fields.hasErrors('telefono')}" th:errors="*{telefono}"></div>
-                    </div>
 
-                    <div class="col-12 col-md-6">
-                        <div class="input-group">
-                            <span class="input-group-text bg-white border-end-0">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRohm_izDQhXjqbEts1Qm3sg33hsQKI33nTGw&s" alt="genero-icon" style="height: 2rem;">
-                            </span>
-                            <select class="form-select border-start-0" th:field="*{genero}" th:errorclass="is-invalid" required>
-                                <option value="" disabled selected>Género</option>
+                        <div class="col-12 col-md-6">
+                            <label for="genero" class="form-label fw-semibold">Género *</label>
+                            <select class="form-select" id="genero" th:field="*{genero}" th:errorclass="is-invalid"
+                                required>
+                                <option value="" disabled selected>Selecciona tu género</option>
                                 <option value="Masculino">Masculino</option>
                                 <option value="Femenino">Femenino</option>
                                 <option value="Otro">Otro</option>
                             </select>
+                            <div class="invalid-feedback" th:if="${#fields.hasErrors('genero')}" th:errors="*{genero}">
+                            </div>
                         </div>
-                        <div class="invalid-feedback d-block" th:if="${#fields.hasErrors('genero')}" th:errors="*{genero}"></div>
-                    </div>
 
-                    <div class="col-12 col-md-6">
-                        <div class="input-group">
-                            <span class="input-group-text bg-white border-end-0">
-                                <img src="https://cdn-icons-png.flaticon.com/512/3159/3159400.png" alt="cumple-icon" style="height: 2rem;">
-                            </span>
-                            <input type="date" class="form-control border-start-0" th:field="*{cumpleanos}" id="cumpleanos" th:errorclass="is-invalid" required>
+                        <div class="col-12 col-md-6">
+                            <label for="cumpleanos" class="form-label fw-semibold">Fecha de nacimiento *</label>
+                            <input type="date" class="form-control" th:field="*{cumpleanos}" id="cumpleanos"
+                                th:errorclass="is-invalid" required>
+                            <div class="invalid-feedback" th:if="${#fields.hasErrors('cumpleanos')}"
+                                th:errors="*{cumpleanos}"></div>
                         </div>
-                        <div class="invalid-feedback d-block" th:if="${#fields.hasErrors('cumpleanos')}" th:errors="*{cumpleanos}"></div>
-                    </div>
 
-                    <div class="col-12">
-                        <div class="input-group">
-                            <span class="input-group-text bg-white border-end-0">
-                                <img src="https://cdn-icons-png.flaticon.com/512/95/95645.png" alt="email-icon" style="height: 2rem;">
-                            </span>
-                            <input type="email" class="form-control border-start-0" th:field="*{email}" placeholder="Correo electrónico*" th:errorclass="is-invalid" required>
+                        <div class="col-12">
+                            <hr class="text-muted my-2">
                         </div>
-                        <div class="invalid-feedback d-block" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></div>
-                    </div>
 
-                    <div class="col-12">
-                        <div class="input-group has-validation">
-                            <span class="input-group-text bg-white border-end-0">
-                                <img src="https://img.freepik.com/vector-premium/icono-acceso-contrasena-vector-simple-mejor-nivel-seguridad_98396-68427.jpg?semt=ais_hybrid&w=740&q=80" alt="password-icon" style="height: 2rem;">
-                            </span>
-                            <input type="password" class="form-control border-start-0" th:field="*{password}" 
-                                   id="password" 
-                                   placeholder="Contraseña*" 
-                                   th:errorclass="is-invalid" 
-                                   required
-                                   pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&amp;()–[{}]:;',?/*~$^+=<>]).{8,100}$"
-                                   title="Debe tener 8+ caracteres, 1 mayúscula, 1 minúscula, 1 número y 1 símbolo.">
-                            
-                            <span class="input-group-text text-danger fw-bold bg-white border-0" id="seguridad-texto">SEGURIDAD: BAJA</span>
+                        <div class="col-12">
+                            <label for="email" class="form-label fw-semibold">Correo electrónico *</label>
+                            <input type="email" class="form-control" id="email" th:field="*{email}"
+                                th:errorclass="is-invalid" required>
+                            <div class="invalid-feedback" th:if="${#fields.hasErrors('email')}" th:errors="*{email}">
+                            </div>
                         </div>
-                        
-                        <div class="invalid-feedback d-block" th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></div>
-                        
-                        <div class="form-text" id="password-requisitos">
-                            Debe tener 8+ caracteres, 1 mayúscula, 1 minúscula, 1 número y 1 símbolo.
-                        </div>
-                    </div>
 
-                    <div class="col-12">
-                        <div class="input-group has-validation">
-                            <span class="input-group-text bg-white border-end-0">
-                                <img src="https://img.freepik.com/vector-premium/icono-acceso-contrasena-vector-simple-mejor-nivel-seguridad_98396-68427.jpg?semt=ais_hybrid&w=740&q=80" alt="confirm-password-icon" style="height: 2rem;">
-                            </span>
-                            <input type="password" class="form-control border-start-0" id="confirmPassword"
-                                   placeholder="Confirmar contraseña*" required>
-                        </div>
-                        <div class="invalid-feedback d-block" id="password-match-error" style="display: none;">
-                            Las contraseñas no coinciden.
-                        </div>
-                    </div>
+                        <div class="col-12 col-md-6">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <label for="password" class="form-label fw-semibold mb-0">Contraseña *</label>
+                                <span class="text-danger fw-bold" id="seguridad-texto"
+                                    style="font-size: 11px; letter-spacing: 0.5px;">SEGURIDAD: BAJA</span>
+                            </div>
+                            <input type="password" class="form-control" th:field="*{password}" id="password"
+                                th:errorclass="is-invalid" required
+                                pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&amp;()–[{}]:;',?/*~$^+=<>]).{8,100}$"
+                                title="Debe tener 8+ caracteres, 1 mayúscula, 1 minúscula, 1 número y 1 símbolo.">
 
-                    <div class="text-center col-12">
-                        <button type="submit" class="btn text-white w-50 mt-3 fw-semibold"
-                                style="background-color: cadetblue; border-radius: 5px;">
-                            REGISTRARSE
-                        </button>
-                    </div>
-                </form>
+                            <div class="invalid-feedback" th:if="${#fields.hasErrors('password')}"
+                                th:errors="*{password}"></div>
+                            <div class="form-text text-muted" id="password-requisitos" style="font-size: 12px;">
+                                Mínimo 8 caracteres, incluyendo mayúsculas, minúsculas, números y símbolos.
+                            </div>
+                        </div>
 
-                <div class="text-center mt-3">
-                    <small>¿Ya tienes cuenta? <a th:href="@{/auth/login}">Inicia sesión</a></small>
+                        <div class="col-12 col-md-6">
+                            <label for="confirmPassword" class="form-label fw-semibold">Confirmar contraseña *</label>
+                            <input type="password" class="form-control" id="confirmPassword" required>
+                            <div class="text-danger mt-1" id="password-match-error"
+                                style="display: none; font-size: 14px;">
+                                Las contraseñas no coinciden.
+                            </div>
+                        </div>
+
+                        <div class="col-12 mt-4">
+                            <button type="submit" class="btn btn-libreria w-100 fw-semibold py-2">
+                                Crear cuenta
+                            </button>
+                        </div>
+
+                    </div>
                 </div>
+            </form>
+
+            <div class="login-box bg-transparent">
+                <p class="mb-0" style="font-size: 14px;">
+                    ¿Ya tienes una cuenta? <a th:href="@{/auth/login}"
+                        class="text-decoration-none link-blue fw-semibold">Inicia sesión aquí</a>.
+                </p>
             </div>
+
         </div>
     </div>
-
-    <div th:replace="fragmentos/footer :: footer"></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script th:src="@{/js/funcionregistro.js}"></script>
 </body>
