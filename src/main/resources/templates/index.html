@@ -56,7 +56,7 @@
             <div class="col" th:each="libro : ${recomendaciones}">
                 <div class="card h-100 shadow-sm">
                     <div class="overflow-hidden" style="height: 250px;">
-                        <img th:src="${libro.imagen}" class="w-100 h-100 object-fit-cover" th:alt="${libro.titulo}">
+                        <img th:src="${'/' + libro.imagen}" class="w-100 h-100 object-fit-cover" th:alt="${libro.titulo}">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title" th:text="${libro.titulo}"></h5>
@@ -78,7 +78,7 @@
             <div class="col" th:each="libro : ${estiloFavorito}">
                 <a th:href="@{'/catalogo?genero=' + ${libro.genero}}" class="d-block text-decoration-none text-dark">
                     <div class="overflow-hidden rounded-circle mx-auto" style="width: 100px; height: 100px;">
-                        <img th:src="${libro.imagen}" class="w-100 h-100 object-fit-cover" th:alt="${libro.genero}">
+                        <img th:src="${'/' + libro.imagen}" class="w-100 h-100 object-fit-cover" th:alt="${libro.genero}">
                     </div>
                     <p class="fw-bold mt-2" th:text="${libro.genero}"></p>
                 </a>
@@ -93,7 +93,7 @@
             <div class="col" th:each="libro : ${colecciones}">
                 <div class="card h-100 shadow-sm">
                     <div class="overflow-hidden" style="height: 250px;">
-                        <img th:src="${libro.imagen}" class="w-100 h-100 object-fit-cover" th:alt="${libro.titulo}">
+                        <img th:src="${'/' + libro.imagen}" class="w-100 h-100 object-fit-cover" th:alt="${libro.titulo}">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title" th:text="${libro.titulo}"></h5>

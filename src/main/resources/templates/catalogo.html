@@ -141,7 +141,7 @@
                                 </div>
 
                                 <a th:href="@{/libro/{id}(id=${libro.id})}">
-                                    <img th:src="@{${libro.imagen}}" 
+                                    <img th:src="@{${'/' + libro.imagen}}" 
                                          class="card-img-top"
                                          style="height:300px;object-fit:cover;"
                                          loading="lazy"
