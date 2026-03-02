@@ -1,0 +1,43 @@
+ body {
+            background-color: #f6f8fa; /* Fondo gris súper claro estilo GitHub */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        }
+        .login-card {
+            background-color: #ffffff;
+            border: 1px solid #d0d7de; /* Borde sutil */
+            border-radius: 6px;
+        }
+        .form-control {
+            background-color: #f6f8fa;
+            border: 1px solid #d0d7de;
+            border-radius: 6px;
+        }
+        .form-control:focus {
+            background-color: #ffffff;
+            border-color: #0969da;
+            box-shadow: 0 0 0 3px rgba(9, 105, 218, 0.3);
+        }
+        .btn-libreria {
+            background-color: #2F4F4F; /* Gris Pizarra Oscuro (Color elegante de biblioteca) */
+            color: white;
+            border: 1px solid rgba(27, 31, 36, 0.15);
+            border-radius: 6px;
+        }
+        .btn-libreria:hover {
+            background-color: #1a2e2e;
+            color: white;
+        }
+        .create-account-box {
+            border: 1px solid #d0d7de;
+            border-radius: 6px;
+            padding: 15px 20px;
+            text-align: center;
+            margin-top: 16px;
+        }
+        .link-blue {
+            color: #0969da;
+        }
+        .link-blue:hover {
+            text-decoration: underline !important;
+        }
+    
