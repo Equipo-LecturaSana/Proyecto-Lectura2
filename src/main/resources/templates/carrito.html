@@ -5,6 +5,8 @@
     <title>Carrito - LecturaSana</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" th:href="@{/css/navbar.css}"/>
     <link rel="stylesheet" th:href="@{/css/style.css}" />
     <link rel="stylesheet" th:href="@{/css/footer.css}">
     
@@ -18,6 +20,8 @@
         <div th:if="${error}" class="alert alert-danger" th:text="${error}"></div>
         <div th:if="${mensaje}" class="alert alert-success" th:text="${mensaje}"></div>
         <div th:if="${mensajeError}" class="alert alert-danger" th:text="${mensajeError}"></div>
+        <!-- Alerta dinámica para PayPal -->
+        <div id="paypal-alert" class="alert d-none" role="alert"></div>
 
         <div class="row g-5">
             <div class="col-lg-8">
@@ -62,25 +66,86 @@
                         <div class="d-flex justify-content-between"><span>IGV (18%):</span><span th:text="${#numbers.formatDecimal(igv,1,2)}"></span></div>
                         <hr><div class="d-flex justify-content-between fw-bold fs-5"><span>Total:</span><span th:text="${#numbers.formatDecimal(total,1,2)}"></span></div>
 
-                        <form th:action="@{/carrito/procesar}" th:object="${pedidoForm}" method="post" class="mt-3">
-                            <h6 class="mt-3">Datos de Envío</h6>
-                            <div class="mb-2"><input type="text" class="form-control" th:field="*{compradorNombre}" placeholder="Nombre Completo" required></div>
-                            <div class="mb-2"><input type="text" class="form-control" th:field="*{direccionEnvio}" placeholder="Dirección de Envío" required></div>
-                            <div class="mb-2"><input type="tel" class="form-control" th:field="*{compradorTelefono}" placeholder="Teléfono (9...)" pattern="^9[0-9]{8}$" required></div>
-                            
-                            <h6 class="mt-3">Pago con Tarjeta</h6>
-                            <div class="mb-2"><input type="text" class="form-control" th:field="*{numeroTarjeta}" placeholder="N° Tarjeta (16 dígitos)" pattern="[0-9]{16}" required></div>
-                            <div class="row">
-                                <div class="col"><input type="month" class="form-control" th:field="*{fechaVencimiento}" required></div>
-                                <div class="col"><input type="text" class="form-control" th:field="*{cvv}" placeholder="CVV" pattern="[0-9]{3,4}" required></div>
+                        <!-- ═══ DATOS DE ENVÍO (compartidos) ═══ -->
+                        <h6 class="mt-3"><i class="bi bi-truck"></i> Datos de Envío</h6>
+                        <div class="mb-2">
+                            <input type="text" id="envio-nombre" class="form-control" placeholder="Nombre Completo" required>
+                        </div>
+                        <div class="mb-2">
+                            <input type="text" id="envio-direccion" class="form-control" placeholder="Dirección de Envío" required>
+                        </div>
+                        <div class="mb-2">
+                            <input type="tel" id="envio-telefono" class="form-control" placeholder="Teléfono (9...)" pattern="^9[0-9]{8}$" required>
+                        </div>
+
+                        <!-- ═══ SELECTOR DE MÉTODO DE PAGO ═══ -->
+                        <h6 class="mt-4"><i class="bi bi-credit-card"></i> Método de Pago</h6>
+                        <ul class="nav nav-pills nav-fill mb-3" id="metodoPagoTabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="tab-tarjeta" data-bs-toggle="pill" 
+                                        data-bs-target="#pago-tarjeta" type="button" role="tab">
+                                    <i class="bi bi-credit-card-2-front"></i> Tarjeta
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="tab-paypal" data-bs-toggle="pill" 
+                                        data-bs-target="#pago-paypal" type="button" role="tab">
+                                    <i class="bi bi-paypal"></i> PayPal
+                                </button>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="metodoPagoContent">
+                            <!-- ─── TAB: Pago con Tarjeta ─── -->
+                            <div class="tab-pane fade show active" id="pago-tarjeta" role="tabpanel">
+                                <form th:action="@{/carrito/procesar}" th:object="${pedidoForm}" method="post" id="form-tarjeta">
+                                    <!-- Campos ocultos para envío (se llenan por JS) -->
+                                    <input type="hidden" th:field="*{compradorNombre}" id="tarjeta-nombre">
+                                    <input type="hidden" th:field="*{direccionEnvio}" id="tarjeta-direccion">
+                                    <input type="hidden" th:field="*{compradorTelefono}" id="tarjeta-telefono">
+
+                                    <div class="mb-2">
+                                        <input type="text" class="form-control" th:field="*{numeroTarjeta}" 
+                                               placeholder="N° Tarjeta (16 dígitos)" pattern="[0-9]{16}" required>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="month" class="form-control" th:field="*{fechaVencimiento}" required>
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control" th:field="*{cvv}" 
+                                                   placeholder="CVV" pattern="[0-9]{3,4}" required>
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-success w-100 mt-3">
+                                        <i class="bi bi-lock-fill"></i> Pagar S/. <span th:text="${#numbers.formatDecimal(total,1,2)}"></span>
+                                    </button>
+
+                                    <div th:if="${#fields.hasAnyErrors()}" class="alert alert-danger mt-2 p-1 small">
+                                        Error en los datos. Revise los campos.
+                                    </div>
+                                </form>
                             </div>
 
-                            <button class="btn btn-success w-100 mt-3">Pagar S/. <span th:text="${#numbers.formatDecimal(total,1,2)}"></span></button>
-                            
-                            <div th:if="${#fields.hasAnyErrors()}" class="alert alert-danger mt-2 p-1 small">
-                                Error en los datos. Revise los campos.
+                            <!-- ─── TAB: Pago con PayPal ─── -->
+                            <div class="tab-pane fade" id="pago-paypal" role="tabpanel">
+                                <div class="text-center mb-3">
+                                    <img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png" 
+                                         alt="PayPal" style="height: 40px;">
+                                    <p class="text-muted small mt-1">Pago seguro con PayPal Sandbox</p>
+                                </div>
+                                <!-- Contenedor del botón de PayPal -->
+                                <div id="paypal-button-container"></div>
+                                <div id="paypal-spinner" class="text-center d-none mt-2">
+                                    <div class="spinner-border text-primary" role="status">
+                                        <span class="visually-hidden">Procesando...</span>
+                                    </div>
+                                    <p class="small text-muted">Procesando tu pago...</p>
+                                </div>
                             </div>
-                        </form>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -88,5 +153,198 @@
     </main>
     <div th:replace="~{fragmentos/footer :: footer}"></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ═══ PayPal JavaScript SDK (Sandbox) ═══ -->
+    <script th:inline="javascript">
+        var paypalClientId = /*[[${paypalClientId}]]*/ '';
+    </script>
+    <script th:src="@{'https://www.paypal.com/sdk/js?client-id=' + ${paypalClientId} + '&amp;currency=USD'}"></script>
+
+    <script th:inline="javascript">
+    /*<![CDATA[*/
+
+    // ─── Utilidades ──────────────────────────────────────────────────
+
+    function validarDatosEnvio() {
+        const nombre = document.getElementById('envio-nombre');
+        const direccion = document.getElementById('envio-direccion');
+        const telefono = document.getElementById('envio-telefono');
+        
+        if (!nombre || !direccion || !telefono) {
+            return { valid: false, message: 'Campos de envío no encontrados.' };
+        }
+        
+        const nombreVal = nombre.value.trim();
+        const direccionVal = direccion.value.trim();
+        const telefonoVal = telefono.value.trim();
+        
+        if (!nombreVal || !direccionVal || !telefonoVal) {
+            return { valid: false, message: 'Por favor complete todos los datos de envío antes de pagar.' };
+        }
+        if (!/^9[0-9]{8}$/.test(telefonoVal)) {
+            return { valid: false, message: 'El teléfono debe tener 9 dígitos y empezar con 9.' };
+        }
+        return { valid: true };
+    }
+
+    function obtenerDatosEnvio() {
+        return {
+            compradorNombre: document.getElementById('envio-nombre').value.trim(),
+            direccionEnvio: document.getElementById('envio-direccion').value.trim(),
+            compradorTelefono: document.getElementById('envio-telefono').value.trim()
+        };
+    }
+
+    function copiarDatosEnvioATarjeta() {
+        const datos = obtenerDatosEnvio();
+        document.getElementById('tarjeta-nombre').value = datos.compradorNombre;
+        document.getElementById('tarjeta-direccion').value = datos.direccionEnvio;
+        document.getElementById('tarjeta-telefono').value = datos.compradorTelefono;
+        console.log('Datos copiados al formulario de tarjeta:', datos);
+    }
+
+    function mostrarAlerta(tipo, mensaje) {
+        const alert = document.getElementById('paypal-alert');
+        if (alert) {
+            alert.className = 'alert alert-' + tipo;
+            alert.textContent = mensaje;
+            alert.classList.remove('d-none');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            if (tipo === 'success') {
+                setTimeout(function() { window.location.href = '/carrito'; }, 2000);
+            }
+        }
+    }
+
+    // ─── Validar envío antes de submit con tarjeta ───────────────────
+
+    var formTarjeta = document.getElementById('form-tarjeta');
+    if (formTarjeta) {
+        formTarjeta.addEventListener('submit', function(e) {
+            // Primero copiar datos de envío
+            copiarDatosEnvioATarjeta();
+            
+            // Validar datos de envío
+            var validacion = validarDatosEnvio();
+            if (!validacion.valid) {
+                e.preventDefault();
+                mostrarAlerta('danger', validacion.message);
+                return false;
+            }
+            
+            // Si todo está bien, el formulario se envía normalmente
+            console.log('Enviando formulario de tarjeta...');
+            return true;
+        });
+    }
+
+    // ─── PayPal Buttons ──────────────────────────────────────────────
+
+    console.log('PayPal SDK loaded:', typeof paypal !== 'undefined');
+    console.log('PayPal Client ID:', paypalClientId);
+
+    if (typeof paypal !== 'undefined') {
+        console.log('Renderizando botón de PayPal...');
+        paypal.Buttons({
+            style: {
+                layout: 'vertical',
+                color:  'gold',
+                shape:  'rect',
+                label:  'paypal'
+            },
+
+            // Validar antes de iniciar el flujo de PayPal
+            onClick: function(data, actions) {
+                var validacion = validarDatosEnvio();
+                if (!validacion.valid) {
+                    mostrarAlerta('danger', validacion.message);
+                    return actions.reject();
+                }
+                return actions.resolve();
+            },
+
+            // 1. Crear la orden en nuestro backend
+            createOrder: function(data, actions) {
+                var datosEnvio = obtenerDatosEnvio();
+                document.getElementById('paypal-spinner').classList.remove('d-none');
+
+                return fetch('/paypal/create-order', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(datosEnvio)
+                })
+                .then(function(res) { return res.json(); })
+                .then(function(orderData) {
+                    document.getElementById('paypal-spinner').classList.add('d-none');
+                    if (orderData.error) {
+                        mostrarAlerta('danger', orderData.error);
+                        throw new Error(orderData.error);
+                    }
+                    console.log('Orden PayPal creada:', orderData.id);
+                    return orderData.id;
+                })
+                .catch(function(err) {
+                    document.getElementById('paypal-spinner').classList.add('d-none');
+                    mostrarAlerta('danger', 'Error al crear la orden: ' + err.message);
+                    throw err;
+                });
+            },
+
+            // 2. Capturar el pago después de que el usuario apruebe en PayPal
+            onApprove: function(data, actions) {
+                document.getElementById('paypal-spinner').classList.remove('d-none');
+                console.log('Pago aprobado, capturando orden:', data.orderID);
+
+                return fetch('/paypal/capture-order/' + data.orderID, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' }
+                })
+                .then(function(res) { return res.json(); })
+                .then(function(captureData) {
+                    document.getElementById('paypal-spinner').classList.add('d-none');
+                    if (captureData.error) {
+                        mostrarAlerta('danger', captureData.error);
+                    } else {
+                        mostrarAlerta('success', captureData.message);
+                    }
+                })
+                .catch(function(err) {
+                    document.getElementById('paypal-spinner').classList.add('d-none');
+                    mostrarAlerta('danger', 'Error al capturar el pago: ' + err.message);
+                });
+            },
+
+            // 3. Si el usuario cancela
+            onCancel: function() {
+                document.getElementById('paypal-spinner').classList.add('d-none');
+                mostrarAlerta('warning', 'Pago cancelado. Puedes intentarlo de nuevo.');
+            },
+
+            // 4. Si hay un error
+            onError: function(err) {
+                document.getElementById('paypal-spinner').classList.add('d-none');
+                console.error('PayPal Error:', err);
+                // No mostrar alerta aquí porque ya se mostró en createOrder
+            }
+
+        }).render('#paypal-button-container').then(function() {
+            console.log('Botón de PayPal renderizado exitosamente');
+        }).catch(function(err) {
+            console.error('Error al renderizar botón PayPal:', err);
+            var container = document.getElementById('paypal-button-container');
+            if (container) {
+                container.innerHTML = '<div class="alert alert-danger">Error al cargar PayPal. Por favor recarga la página.</div>';
+            }
+        });
+    } else {
+        console.error('PayPal SDK no cargado');
+        var container = document.getElementById('paypal-button-container');
+        if (container) {
+            container.innerHTML = '<div class="alert alert-warning">PayPal no disponible. Verifica tu conexión a internet.</div>';
+        }
+    }
+
+    /*]]>*/
+    </script>
 </body>
 </html>

@@ -3,10 +3,19 @@ package com.example.LecturaSana.model;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Pattern;
-import jakarta.validation.constraints.Size;
+
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
 
 @Entity
 @Table(name = "pedidos")
@@ -40,33 +49,31 @@ public class Pedido {
     private Usuario usuario;
 
     // --- DATOS DE ENVÍO ---
-    @NotBlank(message = "El nombre de quien recibe es obligatorio")
     @Column(name = "comprador_nombre", length = 100)
     private String compradorNombre;
 
-    @NotBlank(message = "El teléfono es obligatorio")
-    @Pattern(regexp = "^9[0-9]{8}$", message = "El teléfono debe tener 9 dígitos y empezar con 9")
     @Column(name = "comprador_telefono", length = 20)
     private String compradorTelefono;
 
-    @NotBlank(message = "La dirección de envío es obligatoria")
     @Column(name = "direccion_envio", length = 255)
     private String direccionEnvio;
 
-    // --- DATOS DE PAGO (NO SE GUARDAN EN BD) ---
+    // --- DATOS DE PAGO CON TARJETA (NO SE GUARDAN EN BD - Solo para validación del formulario) ---
     @Transient
-    @NotBlank(message = "El número de tarjeta es obligatorio")
-    @Pattern(regexp = "^[0-9]{16}$", message = "Debe ser un número de 16 dígitos")
     private String numeroTarjeta;
 
     @Transient
-    @NotBlank(message = "La fecha de vencimiento es obligatoria")
     private String fechaVencimiento;
 
     @Transient
-    @NotBlank(message = "El CVV es obligatorio")
-    @Pattern(regexp = "^[0-9]{3,4}$", message = "CVV inválido")
     private String cvv;
+
+    // --- MÉTODO DE PAGO ---
+    @Column(name = "metodo_pago", length = 20)
+    private String metodoPago; // "TARJETA" o "PAYPAL"
+
+    @Column(name = "paypal_order_id", length = 100)
+    private String paypalOrderId;
 
     // Campos opcionales legacy
     @Column(name = "comprador_email", length = 100)
@@ -206,5 +213,22 @@ public class Pedido {
 
     public void setCompradorDni(String compradorDni) {
         this.compradorDni = compradorDni;
+    }
+
+    // Getters/Setters Método de Pago
+    public String getMetodoPago() {
+        return metodoPago;
+    }
+
+    public void setMetodoPago(String metodoPago) {
+        this.metodoPago = metodoPago;
+    }
+
+    public String getPaypalOrderId() {
+        return paypalOrderId;
+    }
+
+    public void setPaypalOrderId(String paypalOrderId) {
+        this.paypalOrderId = paypalOrderId;
     }
 }
