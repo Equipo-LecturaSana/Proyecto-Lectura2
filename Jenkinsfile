@@ -33,7 +33,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                sh 'mvn -B test'
+                sh 'mvn -B clean verify'
             }
             post {
                 always {
