@@ -8,82 +8,114 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" />
         <link rel="stylesheet" th:href="@{/css/style4.css}" />
+        <style>
+            /* Estilos para que el diseño sea más profesional */
+            .card-novedad {
+                transition: transform 0.3s, box-shadow 0.3s;
+                border: none;
+                border-radius: 15px;
+            }
+            .card-novedad:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 15px 35px rgba(0,0,0,0.2) !important;
+            }
+            .img-novedad {
+                height: 450px; /* Tamaño ideal para portadas de libros/cómics */
+                object-fit: cover;
+                border-bottom: 1px solid #eee;
+            }
+            .titular-principal {
+                color: white !important;
+                text-shadow: 3px 3px 6px rgba(0,0,0,0.6);
+                font-weight: 800;
+            }
+            .subtitulo-grande {
+                color: #f8f9fa !important;
+                font-size: 1.8rem !important; /* Letra de bienvenida más grande */
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+                font-weight: 400;
+            }
+        </style>
     </head>
     <body>
         
         <div th:replace="~{fragmentos/navbar :: navbar}"></div>
         
-        <div class="sucu">
-            <div class="space">
-                <h1 class="titular">Novedades</h1>
+        <div class="sucu pb-5">
+            <div class="container text-center py-5">
+                <h1 class="titular-principal display-3 mb-3">Nuevos Lanzamientos</h1>
+                <p class="subtitulo-grande">Descubre las historias que están transformando el mundo</p>
              </div>
 
-            <div class="container mt-3">
-                <div th:if="${mensajeExito}" class="alert alert-success alert-dismissible fade show" role="alert">
+            <div class="container mt-2">
+                <div th:if="${mensajeExito}" class="alert alert-success alert-dismissible fade show shadow-sm" role="alert">
+                    <i class="bi bi-check-circle-fill me-2"></i>
                     <span th:text="${mensajeExito}"></span>
                     <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
                 </div>
-                <div th:if="${mensajeError}" class="alert alert-danger alert-dismissible fade show" role="alert">
+                <div th:if="${mensajeError}" class="alert alert-danger alert-dismissible fade show shadow-sm" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i>
                     <span th:text="${mensajeError}"></span>
                     <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
                 </div>
             </div>
 
-            <div class="container">
-                <div class="row g-3">
-
-                    <div class="col-12 col-md-6 d-flex justify-content-center"
+            <div class="container mt-4">
+                <div class="row g-5"> <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center"
                          th:each="novedad : ${paginaNovedades.content}">
-                        <div class="card h-100 shadow-sm" style="width:25rem;">
-
+                        
+                        <div class="card h-100 shadow-sm card-novedad w-100">
                             <img th:src="@{${novedad.imagen}}" 
-                                 class="card-img-top"
-                                 style="height: 200px; object-fit: cover;"
+                                 class="card-img-top img-novedad"
                                  th:alt="${novedad.titulo}"
-                                 onerror="this.src='https://via.placeholder.com/300x200/6c757d/ffffff?text=Imagen+No+Disponible'">
+                                 onerror="this.src='https://via.placeholder.com/450x600/2c3e50/ffffff?text=Imagen+No+Disponible'">
 
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title" th:text="${novedad.titulo}"></h5>
-                                <p class="card-text flex-grow-1" th:text="${novedad.descripcion}"></p>
-                                <a th:href="@{'/detalle/' + ${novedad.apartado}}" class="btn btn-primary mt-auto">Ver Noticias...</a>
+                            <div class="card-body d-flex flex-column text-center p-4">
+                                <h3 class="card-title fw-bold mb-3 fs-2 text-dark" 
+                                    style="text-transform: uppercase;"
+                                    th:text="${novedad.titulo}">
+                                    Cómics
+                                </h3>
+                                
+                                <p class="card-text text-muted fs-3 mb-4 flex-grow-1" 
+                                   th:text="${novedad.descripcion}">
+                                    Noticias sobre cómics y sus autores
+                                </p>
+                                
+                                <a th:href="@{'/detalle/' + ${novedad.apartado}}" class="btn btn-primary btn-lg w-100 fw-bold">
+                                    VER DETALLES
+                                </a>
                             </div>
 
-                            <div class="card-footer bg-transparent border-top-0" sec:authorize="hasRole('PUBLICADOR')">
-                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                    
-                                    <a th:href="@{/admin/novedades/editar/{id}(id=${novedad.id})}" class="btn btn-warning btn-sm">
-                                        <i class="bi bi-pencil-fill"></i> Editar
+                            <div class="card-footer bg-transparent border-0 pb-4 px-4" sec:authorize="hasRole('PUBLICADOR')">
+                                <hr>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a th:href="@{/admin/novedades/editar/{id}(id=${novedad.id})}" class="btn btn-outline-warning btn-sm">
+                                        <i class="bi bi-pencil-square"></i> Editar
                                     </a>
-
-                                    <form th:action="@{/admin/novedades/eliminar/{id}(id=${novedad.id})}" method="post" onsubmit="return confirm('¿Estás seguro? Esto podría borrar las noticias asociadas.');">
-                                        <button type="submit" class="btn btn-danger btn-sm">
-                                            <i class="bi bi-trash-fill"></i> Eliminar
+                                    <form th:action="@{/admin/novedades/eliminar/{id}(id=${novedad.id})}" method="post" onsubmit="return confirm('¿Estás seguro de eliminar esta novedad?');">
+                                        <button type="submit" class="btn btn-outline-danger btn-sm">
+                                            <i class="bi bi-trash3-fill"></i> Eliminar
                                         </button>
                                     </form>
                                 </div>
                             </div>
-
                         </div>
                     </div>
 
                 </div>
                 
-                <nav aria-label="Paginacion Novedades" th:if="${paginaNovedades.totalPages > 1}" class="mt-5">
-                    <ul class="pagination justify-content-center">
+                <nav aria-label="Paginacion" th:if="${paginaNovedades.totalPages > 1}" class="mt-5">
+                    <ul class="pagination pagination-lg justify-content-center">
                         <li class="page-item" th:classappend="${paginaNovedades.first} ? 'disabled' : ''">
-                            <a class="page-link" th:href="@{/novedades(page=${paginaNovedades.number - 1})}">
-                                &laquo; Anterior
-                            </a>
+                            <a class="page-link" th:href="@{/novedades(page=${paginaNovedades.number - 1})}">&laquo;</a>
                         </li>
                         <li class="page-item" th:each="pageNumber : ${#numbers.sequence(0, paginaNovedades.totalPages - 1)}"
                             th:classappend="${pageNumber == paginaNovedades.number} ? 'active' : ''">
-                            <a class="page-link" th:href="@{/novedades(page=${pageNumber})}"
-                               th:text="${pageNumber + 1}"></a>
+                            <a class="page-link" th:href="@{/novedades(page=${pageNumber})}" th:text="${pageNumber + 1}"></a>
                         </li>
                         <li class="page-item" th:classappend="${paginaNovedades.last} ? 'disabled' : ''">
-                            <a class="page-link" th:href="@{/novedades(page=${paginaNovedades.number + 1})}">
-                                Siguiente &raquo;
-                            </a>
+                            <a class="page-link" th:href="@{/novedades(page=${paginaNovedades.number + 1})}">&raquo;</a>
                         </li>
                     </ul>
                 </nav>
@@ -92,7 +124,6 @@
         </div>
 
         <div th:replace="~{fragmentos/footer :: footer}"></div>
-
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
