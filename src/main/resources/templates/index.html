@@ -8,24 +8,23 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" th:href="@{/css/navbar.css}">
+    <link rel="stylesheet" th:href="@{/css/ui-github.css}">
     <link rel="stylesheet" th:href="@{/css/style.css}">
     <link rel="stylesheet" th:href="@{/css/footer.css}">
-        
 </head>
-
 <body>
 <div th:replace="fragmentos/navbar :: navbar"></div>
 
-<main class="container my-4">
+<main class="container ui-container my-4">
     <div class="bienvenida">
-        <h1 class="text-center mb-4">Bienvenido a Librería LecturaSana</h1>
+        <h1 class="ui-section-title text-center mb-4">Bienvenido a Librería LecturaSana</h1>
     </div>
 
     <p class="lead text-center">Explora nuestra vasta colección de libros. ¡Tu próxima aventura te espera!</p>
 
-    <!-- 🔹 Carrusel dinámico -->
+    <!-- Carrusel dinámico -->
     <section class="mb-5">
-        <h2 class="mb-3 text-center">Novedades Destacadas</h2>
+        <h2 class="ui-section-title mb-3 text-center">Novedades Destacadas</h2>
         <div class="overflow-hidden" style="height: 400px;">
             <div id="novedadesCarousel" class="carousel slide h-100" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
                 <div class="carousel-inner h-100">
@@ -51,12 +50,12 @@
         </div>
     </section>
 
-    <!-- 🔹 Recomendaciones dinámicas -->
+    <!-- Recomendaciones dinámicas -->
     <section class="mb-5">
-        <h2 class="mb-4 text-center">Nuestras Recomendaciones</h2>
+        <h2 class="ui-section-title mb-4 text-center">Nuestras Recomendaciones</h2>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
             <div class="col" th:each="libro : ${recomendaciones}">
-                <div class="card h-100 shadow-sm">
+                <div class="card ui-card-style h-100 shadow-sm">
                     <div class="overflow-hidden" style="height: 250px;">
                         <img th:src="${libro.imagen}" class="w-100 h-100 object-fit-cover" th:alt="${libro.titulo}">
                     </div>
@@ -66,16 +65,16 @@
                         <span class="badge bg-primary mb-2" th:text="${libro.categoria}"></span>
                         <span class="badge bg-info mb-2" th:text="${libro.genero}"></span>
                         <p class="card-text"><small class="text-muted" th:text="'Autor: ' + ${libro.autor}"></small></p>
-                        <a th:href="@{'/catalogo/detalle/' + ${libro.id}}" class="btn btn-primary">Ver Detalles</a>
+                        <a th:href="@{'/libro/' + ${libro.id}}" class="btn btn-libreria">Ver Detalles</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 🔹 Estilo Favorito dinámico -->
-    <section class="container my-5 bg-light p-4 rounded shadow-sm">
-        <h2 class="text-center mb-4">Encuentra tu Estilo Favorito</h2>
+    <!-- Estilo Favorito dinámico -->
+    <section class="ui-card my-5 p-4">
+        <h2 class="ui-section-title text-center mb-4">Encuentra tu Estilo Favorito</h2>
         <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3 text-center">
             <div class="col" th:each="libro : ${estiloFavorito}">
                 <a th:href="@{'/catalogo?genero=' + ${libro.genero}}" class="d-block text-decoration-none text-dark">
@@ -88,30 +87,30 @@
         </div>
     </section>
 
-    <!-- 🔹 Colecciones dinámicas -->
-    <section class="container my-5">
-        <h2 class="text-center mb-4">Colecciones Imprescindibles</h2>
+    <!-- Colecciones dinámicas -->
+    <section class="my-5">
+        <h2 class="ui-section-title text-center mb-4">Colecciones Imprescindibles</h2>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
             <div class="col" th:each="libro : ${colecciones}">
-                <div class="card h-100 shadow-sm">
+                <div class="card ui-card-style h-100 shadow-sm">
                     <div class="overflow-hidden" style="height: 250px;">
                         <img th:src="${libro.imagen}" class="w-100 h-100 object-fit-cover" th:alt="${libro.titulo}">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title" th:text="${libro.titulo}"></h5>
                         <p class="card-text" th:text="${#strings.abbreviate(libro.sinopsis, 150)}"></p>
-                        <a th:href="@{'/catalogo/coleccion/' + ${libro.categoria}}" class="btn btn-primary">Ver Colección</a>
+                        <a th:href="@{'/catalogo?categoria=' + ${libro.categoria}}" class="btn btn-libreria">Ver Colección</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 🔹 Catálogo completo -->
-    <section class="text-center bg-light p-5 rounded shadow-sm">
-        <h2 class="mb-3">¿No encuentras lo que buscas?</h2>
+    <!-- Catálogo completo -->
+    <section class="ui-card text-center p-5">
+        <h2 class="ui-section-title mb-3">¿No encuentras lo que buscas?</h2>
         <p class="lead mb-4">Nuestro catálogo es vasto y siempre estamos añadiendo nuevos títulos. ¡Explóralo completo!</p>
-        <a th:href="@{/catalogo}" class="btn btn-lg btn-success">Ir al Catálogo Completo</a>
+        <a th:href="@{/catalogo}" class="btn btn-libreria btn-lg">Ir al Catálogo Completo</a>
     </section>
 
 </main>

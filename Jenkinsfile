@@ -71,7 +71,18 @@ pipeline {
             }
         }
 
-   stage('Deploy') {
+        stage('Docker Build') {
+            steps {
+                script {
+                    echo '🐳 Construyendo imagen Docker...'
+                    sh 'sudo docker build -t lecturasana:${BUILD_NUMBER} .'
+                    sh 'sudo docker image prune -f'
+                    echo '✅ Imagen Docker creada correctamente.'
+                }
+            }
+        }
+
+        stage('Deploy') {
   steps {
     script {
       echo '🚀 Iniciando despliegue automático...'

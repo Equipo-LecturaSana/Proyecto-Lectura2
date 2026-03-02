@@ -9,16 +9,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" th:href="@{/css/navbar.css}">
+    <link rel="stylesheet" th:href="@{/css/ui-github.css}">
     <link rel="stylesheet" th:href="@{/css/style3.css}">
     <link rel="stylesheet" th:href="@{/css/footer.css}">
-    
 </head>
 <body>
-
     <div th:replace="fragmentos/navbar :: navbar"></div>
 
-    <main class="container my-5">
-        <div class="card shadow-lg border-0 rounded-4 overflow-hidden">
+    <main class="container ui-container my-5">
+        <div class="ui-card overflow-hidden">
             <div class="row g-0">
                 
                 <div class="col-lg-5 d-flex align-items-center justify-content-center p-4">
@@ -72,7 +71,7 @@
                                     <input type="hidden" name="precio" th:value="${libro.precio}">
                                     <input type="hidden" name="imagen" th:value="${libro.imagen}">
                                     
-                                    <button type="submit" class="btn btn-primary btn-lg px-5 py-3">
+                                    <button type="submit" class="btn btn-libreria btn-lg px-5 py-3">
                                         <i class="bi bi-cart-plus me-2"></i> Añadir al Carrito
                                     </button>
                                 </form>
@@ -86,7 +85,7 @@
                             
                         </div>
                         
-                        <a th:href="@{/catalogo}" class="btn btn-outline-secondary mt-3">
+                        <a th:href="@{/catalogo}" class="btn ui-btn-outline mt-3">
                             <i class="bi bi-arrow-left"></i> Volver al Catálogo
                         </a>
 

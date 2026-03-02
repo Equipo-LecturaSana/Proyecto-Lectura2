@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
         <link rel="stylesheet" th:href="@{/css/navbar.css}" />
+        <link rel="stylesheet" th:href="@{/css/footer.css}" />
+        <link rel="stylesheet" th:href="@{/css/ui-github.css}" />
         <link rel="stylesheet" th:href="@{/css/style4.css}" />
         <style>
             /* Estilos para que el diseño sea más profesional */
@@ -44,12 +46,12 @@
         <div th:replace="~{fragmentos/navbar :: navbar}"></div>
         
         <div class="sucu pb-5">
-            <div class="container text-center py-5">
+            <div class="container ui-container text-center py-5">
                 <h1 class="titular-principal display-3 mb-3">Nuevos Lanzamientos</h1>
                 <p class="subtitulo-grande">Descubre las historias que están transformando el mundo</p>
              </div>
 
-            <div class="container mt-2">
+            <div class="container ui-container mt-2">
                 <div th:if="${mensajeExito}" class="alert alert-success alert-dismissible fade show shadow-sm" role="alert">
                     <i class="bi bi-check-circle-fill me-2"></i>
                     <span th:text="${mensajeExito}"></span>
@@ -62,11 +64,11 @@
                 </div>
             </div>
 
-            <div class="container mt-4">
+            <div class="container ui-container mt-4">
                 <div class="row g-5"> <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center"
                          th:each="novedad : ${paginaNovedades.content}">
                         
-                        <div class="card h-100 shadow-sm card-novedad w-100">
+                        <div class="card ui-card-style h-100 shadow-sm card-novedad w-100">
                             <img th:src="@{${novedad.imagen}}" 
                                  class="card-img-top img-novedad"
                                  th:alt="${novedad.titulo}"
@@ -84,7 +86,7 @@
                                     Noticias sobre cómics y sus autores
                                 </p>
                                 
-                                <a th:href="@{'/detalle/' + ${novedad.apartado}}" class="btn btn-primary btn-lg w-100 fw-bold">
+                                <a th:href="@{'/detalle/' + ${novedad.apartado}}" class="btn btn-libreria btn-lg w-100 fw-bold">
                                     VER DETALLES
                                 </a>
                             </div>
