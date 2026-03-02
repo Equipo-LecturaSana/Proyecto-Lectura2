@@ -71,24 +71,49 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
-            steps {
-                script {
-                    echo '🚀 Lanzando aplicación en puerto 8081 de forma permanente...'
-                    
-                    // 1. Limpiar el puerto 8081
-                    sh 'sudo fuser -k 8081/tcp || true'
-                    
-                    // 2. Variable para que Jenkins no mate el proceso al terminar el pipeline
-                    withEnv(['JENKINS_NODE_COOKIE=dontKillMe']) {
-                        sh 'nohup java -jar target/LecturaSana-0.0.1-SNAPSHOT.jar --server.port=8081 > deploy.log 2>&1 &'
-                    }
-                    
-                    echo '✅ Proceso iniciado exitosamente.'
-                    echo '🌍 Revisa tu app en: http://3.140.188.231:8081'
-                }
+    stage('Deploy') {
+    steps {
+        script {
+            echo '🚀 Iniciando despliegue automático...'
+
+            // 1️⃣ Buscar proceso anterior de la app
+            sh '''
+            echo "🔎 Buscando proceso anterior..."
+            PID=$(pgrep -f LecturaSana-0.0.1-SNAPSHOT.jar || true)
+
+            if [ ! -z "$PID" ]; then
+              echo "🛑 Matando proceso anterior con PID $PID"
+              kill -9 $PID
+            else
+              echo "✅ No había proceso previo"
+            fi
+            '''
+
+            // 2️⃣ Levantar nueva versión con perfil PROD
+            withEnv(['JENKINS_NODE_COOKIE=dontKillMe']) {
+                sh '''
+                nohup java -jar target/LecturaSana-0.0.1-SNAPSHOT.jar \
+                --server.port=8081 \
+                --spring.profiles.active=prod \
+                > deploy.log 2>&1 &
+                '''
             }
+
+            // 3️⃣ Esperar que levante
+            echo "⏳ Esperando que la aplicación inicie..."
+            sh 'sleep 10'
+
+            // 4️⃣ Validar con Actuator
+            sh '''
+            echo "🔍 Verificando estado de la aplicación..."
+            curl -f http://localhost:8081/actuator/health
+            '''
+
+            echo '✅ Aplicación desplegada y validada correctamente.'
+            echo '🌍 http://3.140.188.231:8081'
         }
+    }
+}
     } // <--- ESTA ES LA LLAVE QUE FALTABA PARA CERRAR "STAGES"
 
     post { 
