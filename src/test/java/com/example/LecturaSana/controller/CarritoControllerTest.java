@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.mock.web.MockHttpSession;
 import org.springframework.security.test.context.support.WithMockUser;
+import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.csrf;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.web.servlet.MockMvc;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -109,6 +110,7 @@ class CarritoControllerTest {
                    .agregarAlCarrito(anyString(), anyLong(), anyString(), anyDouble(), anyString());
 
         mockMvc.perform(post("/carrito/agregar")
+                        .with(csrf())
                         .session(session)
                         .param("libroId", "1")
                         .param("titulo", "Libro Test")
@@ -128,6 +130,7 @@ class CarritoControllerTest {
                 .agregarAlCarrito(anyString(), anyLong(), anyString(), anyDouble(), anyString());
 
         mockMvc.perform(post("/carrito/agregar")
+                        .with(csrf())
                         .session(session)
                         .param("libroId", "1")
                         .param("titulo", "Libro Test")
@@ -143,7 +146,9 @@ class CarritoControllerTest {
         MockHttpSession session = new MockHttpSession();
         doNothing().when(carritoService).limpiarCarrito(anyString());
 
-        mockMvc.perform(post("/carrito/limpiar").session(session))
+        mockMvc.perform(post("/carrito/limpiar")
+                        .with(csrf())
+                        .session(session))
                .andExpect(status().is3xxRedirection())
                .andExpect(redirectedUrl("/carrito"));
     }
@@ -153,7 +158,8 @@ class CarritoControllerTest {
     void eliminarItem_redireccionaACarrito() throws Exception {
         doNothing().when(carritoService).eliminarItemPorId(anyLong());
 
-        mockMvc.perform(post("/carrito/eliminar/1"))
+        mockMvc.perform(post("/carrito/eliminar/1")
+                        .with(csrf()))
                .andExpect(status().is3xxRedirection())
                .andExpect(redirectedUrl("/carrito"));
     }
