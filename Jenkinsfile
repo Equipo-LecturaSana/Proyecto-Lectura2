@@ -71,48 +71,57 @@ pipeline {
             }
         }
 
-    stage('Deploy') {
-    steps {
-        script {
-            echo '🚀 Iniciando despliegue automático...'
+   stage('Deploy') {
+  steps {
+    script {
+      echo '🚀 Iniciando despliegue automático...'
 
-            // 1️⃣ Buscar proceso anterior de la app
-            sh '''
-            echo "🔎 Buscando proceso anterior..."
-            PID=$(pgrep -f LecturaSana-0.0.1-SNAPSHOT.jar || true)
+      // 1) Matar proceso anterior (solo tu jar)
+      sh '''
+        echo "🔎 Buscando proceso anterior..."
+        PID=$(pgrep -f 'LecturaSana-0.0.1-SNAPSHOT.jar' || true)
+        if [ -n "$PID" ]; then
+          echo "🛑 Matando proceso anterior con PID $PID"
+          kill -9 $PID || true
+        else
+          echo "✅ No había proceso previo"
+        fi
+      '''
 
-            if [ ! -z "$PID" ]; then
-              echo "🛑 Matando proceso anterior con PID $PID"
-              kill -9 $PID
-            else
-              echo "✅ No había proceso previo"
-            fi
-            '''
+      // 2) Levantar en background y guardar logs
+      withEnv(['JENKINS_NODE_COOKIE=dontKillMe']) {
+        sh '''
+          echo "🚀 Levantando nueva versión..."
+          nohup java -jar target/LecturaSana-0.0.1-SNAPSHOT.jar \
+            --server.port=8081 \
+            --spring.profiles.active=prod \
+            > deploy.log 2>&1 &
 
-            // 2️⃣ Levantar nueva versión con perfil PROD
-            withEnv(['JENKINS_NODE_COOKIE=dontKillMe']) {
-                sh '''
-                nohup java -jar target/LecturaSana-0.0.1-SNAPSHOT.jar \
-                --server.port=8081 \
-                --spring.profiles.active=prod \
-                > deploy.log 2>&1 &
-                '''
-            }
+          echo "✅ Comando ejecutado. PID nuevo:"
+          pgrep -f 'LecturaSana-0.0.1-SNAPSHOT.jar' || true
+        '''
+      }
 
-            // 3️⃣ Esperar que levante
-            echo "⏳ Esperando que la aplicación inicie..."
-            sh 'sleep 10'
+      // 3) Esperar y reintentar healthcheck (hasta 60s)
+      sh '''
+        echo "⏳ Esperando a que levante (máx 60s)..."
+        for i in $(seq 1 12); do
+          if curl -fsS http://localhost:8081/actuator/health > /dev/null; then
+            echo "✅ Healthcheck OK"
+            exit 0
+          fi
+          echo "Intento $i/12: aún no responde..."
+          sleep 5
+        done
 
-            // 4️⃣ Validar con Actuator
-            sh '''
-            echo "🔍 Verificando estado de la aplicación..."
-            curl -f http://localhost:8081/actuator/health
-            '''
+        echo "❌ No levantó. Mostrando deploy.log:"
+        tail -n 200 deploy.log || true
+        exit 1
+      '''
 
-            echo '✅ Aplicación desplegada y validada correctamente.'
-            echo '🌍 http://3.140.188.231:8081'
-        }
+      echo '🌍 http://3.140.188.231:8081'
     }
+  }
 }
     } // <--- ESTA ES LA LLAVE QUE FALTABA PARA CERRAR "STAGES"
 
