@@ -675,3 +675,421 @@ ADVERTENCIA: Unmatched cancel notification for request id 423
 2026.03.02 01:44:38 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\repository\TarjetaNovedadRepository.java. Using fallback presentation compiler.
 mar. 02, 2026 1:46:14 A. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFORMACIÓN: Unsupported notification method: $/setTrace
+2026.03.02 01:55:54 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\DemoTest.java. Using fallback presentation compiler.
+2026.03.02 01:55:54 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\DemoTest.java. Using fallback presentation compiler.
+2026.03.02 01:56:17 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\DemoTest.java. Using fallback presentation compiler.
+2026.03.02 01:56:17 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.03.02 01:56:17 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.03.02 01:56:23 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.03.02 01:57:47 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\PayPalProperties.java
+2026.03.02 01:57:47 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\PayPalProperties.java. Using fallback presentation compiler.
+2026.03.02 01:57:47 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\PayPalProperties.java. Using fallback presentation compiler.
+2026.03.02 01:57:50 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\PayPalProperties.java. Using fallback presentation compiler.
+2026.03.02 01:57:52 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\PayPalProperties.java. Using fallback presentation compiler.
+2026.03.02 01:57:52 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\PayPalProperties.java. Using fallback presentation compiler.
+2026.03.02 01:57:52 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\PayPalProperties.java. Using fallback presentation compiler.
+2026.03.02 01:57:52 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\PayPalProperties.java. Using fallback presentation compiler.
+2026.03.02 01:57:55 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\PayPalProperties.java. Using fallback presentation compiler.
+2026.03.02 01:58:01 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\PayPalService.java. Using fallback presentation compiler.
+2026.03.02 01:58:01 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\PayPalService.java
+2026.03.02 01:58:02 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\PayPalService.java. Using fallback presentation compiler.
+2026.03.02 01:58:04 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\PayPalService.java. Using fallback presentation compiler.
+2026.03.02 01:58:04 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\PayPalService.java. Using fallback presentation compiler.
+2026.03.02 01:58:04 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\PayPalService.java. Using fallback presentation compiler.
+2026.03.02 02:00:23 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\PayPalProperties.java
+2026.03.02 02:00:23 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\PayPalProperties.java. Using fallback presentation compiler.
+2026.03.02 02:00:23 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\PayPalProperties.java. Using fallback presentation compiler.
+2026.03.02 02:00:23 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\PayPalProperties.java. Using fallback presentation compiler.
+2026.03.02 02:00:26 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\PayPalProperties.java. Using fallback presentation compiler.
+2026.03.02 02:00:26 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\PayPalProperties.java. Using fallback presentation compiler.
+2026.03.02 02:00:27 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\SecurityConfig.java
+2026.03.02 02:00:27 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\SecurityConfig.java. Using fallback presentation compiler.
+2026.03.02 02:00:29 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\SecurityConfig.java. Using fallback presentation compiler.
+2026.03.02 02:00:29 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\SecurityConfig.java. Using fallback presentation compiler.
+2026.03.02 02:00:30 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\PayPalConfig.java
+2026.03.02 02:00:30 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\PayPalConfig.java. Using fallback presentation compiler.
+2026.03.02 02:00:31 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\PayPalConfig.java. Using fallback presentation compiler.
+2026.03.02 02:00:36 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\PayPalProperties.java
+2026.03.02 02:00:37 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\PayPalConfig.java. Using fallback presentation compiler.
+2026.03.02 02:03:57 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\PayPalService.java. Using fallback presentation compiler.
+2026.03.02 02:04:31 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\PayPalService.java. Using fallback presentation compiler.
+2026.03.02 02:06:35 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\PayPalService.java
+2026.03.02 02:11:19 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\PayPalService.java. Using fallback presentation compiler.
+2026.03.02 02:16:25 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\DemoTest.java. Using fallback presentation compiler.
+2026.03.02 02:16:25 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\DemoTest.java. Using fallback presentation compiler.
+2026.03.02 02:18:47 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\DemoTest.java. Using fallback presentation compiler.
+2026.03.02 02:25:21 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\.metals\lsp.trace.json or C:\Users\Usuario\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2026.03.02 02:25:27 INFO  logging to files C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\.metals\metals.log
+2026.03.02 02:25:27 INFO  Started: Metals version 1.6.5 in folders 'C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2' for client Visual Studio Code 1.109.5.
+2026.03.02 02:25:27 INFO  time: initialize in 0.16s
+2026.03.02 02:25:27 INFO  Memory monitor started
+2026.03.02 02:25:35 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.03.02 02:25:40 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\PayPalConfig.java
+2026.03.02 02:25:40 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\PayPalProperties.java
+2026.03.02 02:25:40 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\controller\AdminDashboard.java
+2026.03.02 02:25:40 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\model\Pedido.java
+2026.03.02 02:25:40 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\model\CarritoItem.java
+2026.03.02 02:25:40 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\CarritoService.java
+2026.03.02 02:25:40 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\SecurityConfig.java
+2026.03.02 02:25:40 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\controller\CarritoController.java
+2026.03.02 02:25:40 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\controller\PayPalController.java
+2026.03.02 02:25:40 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\DemoTest.java
+2026.03.02 02:25:40 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\PayPalService.java
+2026.03.02 02:25:40 INFO  restarted 0 presentation compilers
+C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\SecurityConfig.java:36: error: unmappable character (0x8D) for encoding windows-1252
+            // --- AQUÃ? QUITAMOS TODO EL BLOQUE ".headers(...)" ---
+                       ^
+C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\SecurityConfig.java:40: error: unmappable character (0x81) for encoding windows-1252
+                // 1. RECURSOS ESTÃ?TICOS (ImÃ¡genes, CSS, JS)
+                                   ^
+C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\model\Pedido.java:51: error: unmappable character (0x8D) for encoding windows-1252
+    // --- DATOS DE ENVÃ?O ---
+                        ^
+2026.03.02 02:25:49 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\UsuarioService.java
+C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\UsuarioService.java:33: error: unmappable character (0x8D) for encoding windows-1252
+        // 2. --- Â¡CORRECCIÃ“N AQUÃ?! ASIGNAR ROL POR DEFECTO ---
+                                    ^
+2026.03.02 02:25:49 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\PedidoService.java
+2026.03.02 02:25:49 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\LibroService.java
+2026.03.02 02:25:51 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\UsuarioService.java. Using fallback presentation compiler.
+2026.03.02 02:25:56 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\UsuarioService.java
+2026.03.02 02:25:56 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\UsuarioService.java. Using fallback presentation compiler.
+mar. 02, 2026 2:25:57 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 4
+2026.03.02 02:25:56 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\UsuarioService.java. Using fallback presentation compiler.
+2026.03.02 02:25:57 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\UsuarioService.java. Using fallback presentation compiler.
+mar. 02, 2026 2:25:57 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 1
+mar. 02, 2026 2:25:57 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 7
+2026.03.02 02:25:57 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\UsuarioService.java. Using fallback presentation compiler.
+2026.03.02 02:25:57 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\UsuarioService.java. Using fallback presentation compiler.
+2026.03.02 02:25:57 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\UsuarioService.java. Using fallback presentation compiler.
+2026.03.02 02:25:57 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\UsuarioService.java. Using fallback presentation compiler.
+2026.03.02 02:25:57 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\UsuarioService.java. Using fallback presentation compiler.
+mar. 02, 2026 2:25:58 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 12
+2026.03.02 02:26:06 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\UsuarioService.java. Using fallback presentation compiler.
+2026.03.02 02:26:08 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\UsuarioService.java. Using fallback presentation compiler.
+2026.03.02 02:26:08 INFO  skipping build import with status 'Dismissed'
+2026.03.02 02:26:17 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\UsuarioService.java. Using fallback presentation compiler.
+2026.03.02 02:26:31 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java
+2026.03.02 02:26:31 WARN  Running javac-semanticdb failed for file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/src/test/java/com/example/LecturaSana/controller/AdminDashboardTest.java. Output:
+
+2026.03.02 02:26:31 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:26:31 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:26:31 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+mar. 02, 2026 2:26:33 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 19
+2026.03.02 02:26:33 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:26:33 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:26:33 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:26:34 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:26:34 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:26:34 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:26:34 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+mar. 02, 2026 2:26:35 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 22
+2026.03.02 02:26:36 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:26:36 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java
+2026.03.02 02:26:36 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:26:42 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:26:42 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:26:44 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:26:47 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:26:54 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:26:54 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java
+2026.03.02 02:26:54 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:26:54 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:26:55 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:26:55 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:26:55 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+mar. 02, 2026 2:26:56 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 40
+2026.03.02 02:26:56 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:26:56 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:26:56 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:26:56 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:26:57 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+mar. 02, 2026 2:26:58 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 45
+mar. 02, 2026 2:26:58 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 43
+2026.03.02 02:26:57 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+mar. 02, 2026 2:26:58 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 46
+2026.03.02 02:26:57 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+mar. 02, 2026 2:26:58 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 48
+mar. 02, 2026 2:26:59 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 49
+2026.03.02 02:27:05 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java
+2026.03.02 02:27:05 WARN  Running javac-semanticdb failed for file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/src/test/java/com/example/LecturaSana/controller/CarritoControllerTest.java. Output:
+
+2026.03.02 02:27:06 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:27:06 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:27:06 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:27:06 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:27:07 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+mar. 02, 2026 2:27:07 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 53
+2026.03.02 02:27:07 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+mar. 02, 2026 2:27:10 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 54
+2026.03.02 02:27:10 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:27:10 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:27:10 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:27:10 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java
+mar. 02, 2026 2:27:10 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 57
+2026.03.02 02:27:10 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:27:10 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java
+mar. 02, 2026 2:27:10 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 59
+2026.03.02 02:27:14 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:27:14 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java
+2026.03.02 02:27:15 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:27:15 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+mar. 02, 2026 2:27:15 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 67
+mar. 02, 2026 2:27:15 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 68
+2026.03.02 02:27:19 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:27:19 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+mar. 02, 2026 2:27:20 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 69
+2026.03.02 02:27:21 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:27:21 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java
+2026.03.02 02:27:21 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:27:21 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:27:21 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:27:24 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:27:28 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\DemoTest.java. Using fallback presentation compiler.
+2026.03.02 02:27:28 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\DemoTest.java
+2026.03.02 02:27:28 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\DemoTest.java. Using fallback presentation compiler.
+2026.03.02 02:27:40 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\PayPalControllerTest.java
+2026.03.02 02:27:40 WARN  Running javac-semanticdb failed for file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/src/test/java/com/example/LecturaSana/controller/PayPalControllerTest.java. Output:
+
+2026.03.02 02:27:40 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\PayPalControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:27:40 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\DemoTest.java. Using fallback presentation compiler.
+2026.03.02 02:27:44 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\PayPalControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:27:44 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\PayPalControllerTest.java
+2026.03.02 02:27:44 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\DemoTest.java. Using fallback presentation compiler.
+2026.03.02 02:28:05 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\controller\AdminDashboard.java. Using fallback presentation compiler.
+2026.03.02 02:28:05 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\controller\CarritoController.java. Using fallback presentation compiler.
+2026.03.02 02:28:05 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\controller\PayPalController.java. Using fallback presentation compiler.
+2026.03.02 02:28:05 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\PayPalService.java. Using fallback presentation compiler.
+2026.03.02 02:28:05 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\SecurityConfig.java. Using fallback presentation compiler.
+2026.03.02 02:28:06 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\CarritoService.java. Using fallback presentation compiler.
+mar. 02, 2026 2:28:09 A. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
+2026.03.02 02:28:16 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\PayPalConfig.java. Using fallback presentation compiler.
+2026.03.02 02:28:16 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\PayPalProperties.java. Using fallback presentation compiler.
+2026.03.02 02:28:23 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\model\Pedido.java. Using fallback presentation compiler.
+2026.03.02 02:28:23 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\model\CarritoItem.java. Using fallback presentation compiler.
+2026.03.02 02:28:42 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:28:43 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java
+2026.03.02 02:28:42 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+mar. 02, 2026 2:28:43 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 100
+2026.03.02 02:28:43 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:28:44 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:28:49 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\UsuarioService.java. Using fallback presentation compiler.
+2026.03.02 02:28:49 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\PedidoService.java. Using fallback presentation compiler.
+2026.03.02 02:28:49 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\LibroService.java. Using fallback presentation compiler.
+2026.03.02 02:29:05 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:29:05 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+mar. 02, 2026 2:29:06 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 110
+2026.03.02 02:29:07 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:29:07 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java
+2026.03.02 02:29:07 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:29:08 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:29:08 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:29:10 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:29:10 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:29:10 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:29:18 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:29:23 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:29:31 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:29:31 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:29:31 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:29:33 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:29:33 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:29:33 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\PayPalControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:29:34 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java
+2026.03.02 02:29:34 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java
+2026.03.02 02:29:34 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\PayPalControllerTest.java
+2026.03.02 02:29:33 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:29:35 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:29:35 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:29:38 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:29:40 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:29:42 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:29:47 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:29:51 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:29:54 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:29:57 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:31:07 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:31:12 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:31:13 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:31:55 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:31:55 INFO  skipping build import with status 'Dismissed'
+2026.03.02 02:33:04 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\DemoTest.java. Using fallback presentation compiler.
+2026.03.02 02:33:10 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:33:10 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java
+2026.03.02 02:33:10 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:33:10 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:33:33 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:33:33 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java
+2026.03.02 02:33:33 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:33:33 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:34:31 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:34:31 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java
+2026.03.02 02:34:31 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:34:31 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:35:21 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:35:21 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:35:26 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:35:26 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:35:31 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:35:31 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java
+2026.03.02 02:35:31 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:35:31 INFO  skipping build import with status 'Dismissed'
+2026.03.02 02:35:33 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:35:33 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\PayPalControllerTest.java
+2026.03.02 02:35:33 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java
+2026.03.02 02:35:37 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:35:38 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:35:38 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:35:53 INFO  skipping build import with status 'Dismissed'
+2026.03.02 02:35:58 INFO  skipping build import with status 'Dismissed'
+2026.03.02 02:36:07 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:36:07 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java
+2026.03.02 02:36:07 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:36:10 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:36:10 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java
+2026.03.02 02:36:10 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:36:10 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:36:11 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:36:33 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:36:33 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java
+2026.03.02 02:36:33 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:36:34 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:36:35 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:36:35 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:36:40 INFO  skipping build import with status 'Dismissed'
+2026.03.02 02:36:42 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:36:42 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:36:43 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:36:43 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+mar. 02, 2026 2:36:44 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 216
+2026.03.02 02:36:46 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:36:46 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:36:47 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java
+2026.03.02 02:36:47 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:36:50 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:36:50 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:36:52 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:36:52 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:36:53 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java
+2026.03.02 02:36:53 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:36:54 INFO  time: code lens generation in 1.53s
+2026.03.02 02:36:56 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java
+2026.03.02 02:36:57 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+mar. 02, 2026 2:36:57 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 243
+2026.03.02 02:36:57 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:36:57 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:36:58 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:36:58 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+mar. 02, 2026 2:36:58 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 246
+2026.03.02 02:36:58 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:37:01 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:37:02 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:37:05 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:37:08 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:37:12 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:37:14 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:37:15 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:37:15 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:37:15 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+mar. 02, 2026 2:37:16 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 256
+2026.03.02 02:37:17 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:37:17 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java
+2026.03.02 02:37:17 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:37:19 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\DemoTest.java. Using fallback presentation compiler.
+2026.03.02 02:37:19 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\DemoTest.java
+2026.03.02 02:37:19 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\DemoTest.java. Using fallback presentation compiler.
+2026.03.02 02:37:22 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\DemoTest.java. Using fallback presentation compiler.
+2026.03.02 02:37:24 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:37:24 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java
+2026.03.02 02:37:24 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\AdminDashboardTest.java. Using fallback presentation compiler.
+2026.03.02 02:39:15 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:39:15 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java
+2026.03.02 02:39:15 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:39:16 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:39:16 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:39:16 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:39:16 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:39:16 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:39:24 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:39:28 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:39:28 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:39:32 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\DemoTest.java. Using fallback presentation compiler.
+2026.03.02 02:39:32 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\DemoTest.java
+2026.03.02 02:39:33 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\DemoTest.java. Using fallback presentation compiler.
+2026.03.02 02:39:33 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\DemoTest.java. Using fallback presentation compiler.
+2026.03.02 02:39:33 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:39:33 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java
+2026.03.02 02:39:34 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:39:38 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:39:38 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java
+mar. 02, 2026 2:39:38 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 301
+2026.03.02 02:39:38 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+mar. 02, 2026 2:39:39 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 304
+2026.03.02 02:39:43 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:39:43 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java
+2026.03.02 02:39:43 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:39:46 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:40:14 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:40:14 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java
+2026.03.02 02:40:14 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:40:19 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:40:19 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:40:19 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:40:20 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:40:20 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java
+2026.03.02 02:40:20 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:40:21 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:40:21 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:40:22 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:40:23 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:40:23 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java
+2026.03.02 02:40:23 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:40:23 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:40:24 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:40:24 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java
+2026.03.02 02:40:25 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:40:25 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:40:25 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:40:25 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:40:26 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:40:27 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:40:28 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:40:29 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:40:30 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java
+2026.03.02 02:40:30 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:40:38 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:40:38 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+mar. 02, 2026 2:40:38 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 356
+2026.03.02 02:40:38 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:40:39 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:40:40 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
+2026.03.02 02:40:42 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\test\java\com\example\LecturaSana\controller\CarritoControllerTest.java. Using fallback presentation compiler.
