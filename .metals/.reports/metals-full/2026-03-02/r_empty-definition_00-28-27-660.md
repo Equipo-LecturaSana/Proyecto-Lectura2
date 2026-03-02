@@ -1,21 +1,23 @@
+error id: file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/src/main/java/com/example/LecturaSana/model/Pedido.java:jakarta/validation/constraints/Pattern#
+file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/src/main/java/com/example/LecturaSana/model/Pedido.java
+empty definition using pc, found symbol in pc: jakarta/validation/constraints/Pattern#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 246
+uri: file:///C:/Users/Usuario/Documents/GitHub/Proyecto-Lectura2/src/main/java/com/example/LecturaSana/model/Pedido.java
+text:
+```scala
 package com.example.LecturaSana.model;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
-import jakarta.persistence.Transient;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.@@Pattern;
+import jakarta.validation.constraints.Size;
 
 @Entity
 @Table(name = "pedidos")
@@ -49,12 +51,16 @@ public class Pedido {
     private Usuario usuario;
 
     // --- DATOS DE ENVÍO ---
+    @NotBlank(message = "El nombre de quien recibe es obligatorio")
     @Column(name = "comprador_nombre", length = 100)
     private String compradorNombre;
 
+    @NotBlank(message = "El teléfono es obligatorio")
+    @Pattern(regexp = "^9[0-9]{8}$", message = "El teléfono debe tener 9 dígitos y empezar con 9")
     @Column(name = "comprador_telefono", length = 20)
     private String compradorTelefono;
 
+    @NotBlank(message = "La dirección de envío es obligatoria")
     @Column(name = "direccion_envio", length = 255)
     private String direccionEnvio;
 
@@ -232,3 +238,10 @@ public class Pedido {
         this.paypalOrderId = paypalOrderId;
     }
 }
+
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: jakarta/validation/constraints/Pattern#

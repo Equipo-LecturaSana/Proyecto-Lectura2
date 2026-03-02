@@ -39,7 +39,7 @@ h1{
     text-align: center;
 }
 .navbar {
-    background: linear-gradient(90deg, #2c3e50 0%, #4ca1af 100%);
+  background: linear-gradient(135deg, #0c7485 0%, #4ca1af 60%, #4ca1af 100%);
 }
 
 footer {

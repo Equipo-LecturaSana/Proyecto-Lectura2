@@ -2,19 +2,34 @@ package com.example.LecturaSana.controller;
 
 import java.time.LocalDateTime;
 import java.time.YearMonth;
-import java.util.*;
-import org.springframework.http.*;
-import org.springframework.security.core.context.SecurityContextHolder;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-import com.example.LecturaSana.model.*;
-import com.example.LecturaSana.service.*;
+
+import com.example.LecturaSana.config.PayPalConfig;
+import com.example.LecturaSana.model.CarritoItem;
+import com.example.LecturaSana.model.Pedido;
+import com.example.LecturaSana.service.CarritoService;
+import com.example.LecturaSana.service.LibroService;
+import com.example.LecturaSana.service.PedidoService;
+import com.example.LecturaSana.service.UsuarioService;
+
 import jakarta.servlet.http.HttpSession;
-import jakarta.validation.Valid;
 
 @Controller
 public class CarritoController {
@@ -23,12 +38,14 @@ public class CarritoController {
     private final PedidoService ps;
     private final UsuarioService us;
     private final LibroService ls;
+    private final PayPalConfig payPalConfig;
 
-    public CarritoController(CarritoService cs, PedidoService ps, UsuarioService us, LibroService ls) {
+    public CarritoController(CarritoService cs, PedidoService ps, UsuarioService us, LibroService ls, PayPalConfig payPalConfig) {
         this.cs = cs;
         this.ps = ps;
         this.us = us;
         this.ls = ls;
+        this.payPalConfig = payPalConfig;
     }
 
     @GetMapping("/carrito")
@@ -42,6 +59,7 @@ public class CarritoController {
         if (!m.containsAttribute("pedidoForm")) {
             m.addAttribute("pedidoForm", new Pedido());
         }
+        m.addAttribute("paypalClientId", payPalConfig.getClientId());
         return "carrito";
     }
 
@@ -63,14 +81,46 @@ public class CarritoController {
     }
 
     @PostMapping("/carrito/procesar")
-    public String procesar(@Valid @ModelAttribute("pedidoForm") Pedido form, BindingResult res, HttpSession s, Model m, RedirectAttributes attr) {
+    public String procesar(@ModelAttribute("pedidoForm") Pedido form, BindingResult res, HttpSession s, Model m, RedirectAttributes attr) {
         String sid = s.getId();
-        try {
-            if (YearMonth.parse(form.getFechaVencimiento()).isBefore(YearMonth.now())) {
-                res.rejectValue("fechaVencimiento", "error", "Tarjeta vencida.");
+        
+        // Validación manual de datos de envío
+        if (form.getCompradorNombre() == null || form.getCompradorNombre().isBlank()) {
+            res.rejectValue("compradorNombre", "error", "El nombre es obligatorio.");
+        }
+        if (form.getDireccionEnvio() == null || form.getDireccionEnvio().isBlank()) {
+            res.rejectValue("direccionEnvio", "error", "La dirección es obligatoria.");
+        }
+        if (form.getCompradorTelefono() == null || form.getCompradorTelefono().isBlank()) {
+            res.rejectValue("compradorTelefono", "error", "El teléfono es obligatorio.");
+        } else if (!form.getCompradorTelefono().matches("^9[0-9]{8}$")) {
+            res.rejectValue("compradorTelefono", "error", "El teléfono debe tener 9 dígitos y empezar con 9.");
+        }
+        
+        // Validación manual de campos de tarjeta (ya que son @Transient sin @NotBlank)
+        if (form.getNumeroTarjeta() == null || form.getNumeroTarjeta().isBlank()) {
+            res.rejectValue("numeroTarjeta", "error", "El número de tarjeta es obligatorio.");
+        } else if (!form.getNumeroTarjeta().matches("^[0-9]{16}$")) {
+            res.rejectValue("numeroTarjeta", "error", "Debe ser un número de 16 dígitos.");
+        }
+        
+        if (form.getCvv() == null || form.getCvv().isBlank()) {
+            res.rejectValue("cvv", "error", "El CVV es obligatorio.");
+        } else if (!form.getCvv().matches("^[0-9]{3,4}$")) {
+            res.rejectValue("cvv", "error", "CVV inválido.");
+        }
+        
+        // Validar fecha de vencimiento
+        if (form.getFechaVencimiento() == null || form.getFechaVencimiento().isBlank()) {
+            res.rejectValue("fechaVencimiento", "error", "La fecha de vencimiento es obligatoria.");
+        } else {
+            try {
+                if (YearMonth.parse(form.getFechaVencimiento()).isBefore(YearMonth.now())) {
+                    res.rejectValue("fechaVencimiento", "error", "Tarjeta vencida.");
+                }
+            } catch (Exception e) {
+                res.rejectValue("fechaVencimiento", "error", "Fecha inválida.");
             }
-        } catch (Exception e) {
-            res.rejectValue("fechaVencimiento", "error", "Fecha inválida.");
         }
 
         if (res.hasErrors()) {
@@ -80,6 +130,7 @@ public class CarritoController {
             m.addAttribute("subtotal", sub);
             m.addAttribute("igv", sub * 0.18);
             m.addAttribute("total", sub * 1.18);
+            m.addAttribute("paypalClientId", payPalConfig.getClientId());
             return "carrito";
         }
 
@@ -103,6 +154,7 @@ public class CarritoController {
                 us.buscarPorEmail(auth.getName()).ifPresent(form::setUsuario);
             }
 
+            form.setMetodoPago("TARJETA");
             ps.guardarPedido(form);
             cs.limpiarCarrito(sid);
             attr.addFlashAttribute("mensaje", "¡Compra exitosa! ID: " + form.getId());

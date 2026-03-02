@@ -9,6 +9,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+
 import com.example.LecturaSana.repository.UsuarioRepository;
 
 @Configuration
@@ -50,6 +51,7 @@ public class SecurityConfig {
                     "/detalle/**",        // Ver noticia
                     "/libro/**",          // Ver libro detalle
                     "/api/carrito/**",    // Para que el contador del carrito funcione
+                    "/paypal/**",         // Endpoints de PayPal
                     "/error/**"           // Páginas de error
                 ).permitAll()
 
