@@ -1,6 +1,7 @@
 body {
     background-color: #f8f9fa;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("https://th.bing.com/th/id/R.e549911d29ed4b7f0a88f2fff1db4107?rik=%2bHhgjgI3M%2fRluA&pid=ImgRaw&r=0");
 }
 
 .navbar {
@@ -15,6 +16,7 @@ body {
     text-align: center;
     margin-bottom: 30px;
 }
+
 .bienvenida {
     margin: 40px 0;
 }
@@ -102,7 +104,8 @@ footer {
     color: white !important;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
 }

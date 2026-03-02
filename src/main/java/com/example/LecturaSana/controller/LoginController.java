@@ -6,10 +6,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+
 import com.example.LecturaSana.model.Usuario;
 
 @Controller
-@RequestMapping("/auth")
+@RequestMapping("/auth")            
 public class LoginController {
 
     @GetMapping("/login")
