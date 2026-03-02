@@ -651,3 +651,27 @@ INFORMACIÓN: Unsupported notification method: $/setTrace
 2026.03.02 01:38:26 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
 2026.03.02 01:38:27 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
 2026.03.02 01:42:18 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.03.02 01:42:46 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\PayPalService.java. Using fallback presentation compiler.
+2026.03.02 01:42:46 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\PayPalService.java
+mar. 02, 2026 1:42:46 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 423
+2026.03.02 01:42:46 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\PayPalService.java. Using fallback presentation compiler.
+2026.03.02 01:42:47 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\PayPalService.java. Using fallback presentation compiler.
+2026.03.02 01:42:49 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\PayPalService.java. Using fallback presentation compiler.
+2026.03.02 01:42:49 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\PayPalService.java. Using fallback presentation compiler.
+2026.03.02 01:42:53 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\PayPalService.java. Using fallback presentation compiler.
+2026.03.02 01:42:54 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\PayPalService.java
+2026.03.02 01:42:58 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\PayPalProperties.java. Using fallback presentation compiler.
+2026.03.02 01:42:58 WARN  no build target for: C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\config\PayPalProperties.java
+2026.03.02 01:43:21 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.03.02 01:43:22 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.03.02 01:44:30 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\LecturaSanaApplication.java. Using fallback presentation compiler.
+2026.03.02 01:44:38 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\model\Usuario.java. Using fallback presentation compiler.
+2026.03.02 01:44:38 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\CarritoService.java. Using fallback presentation compiler.
+2026.03.02 01:44:38 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\repository\CarritoItemRepository.java. Using fallback presentation compiler.
+2026.03.02 01:44:38 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\repository\LibroRepository.java. Using fallback presentation compiler.
+2026.03.02 01:44:38 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\controller\PerfilController.java. Using fallback presentation compiler.
+2026.03.02 01:44:38 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\service\NovedadService.java. Using fallback presentation compiler.
+2026.03.02 01:44:38 INFO  no build target found for C:\Users\Usuario\Documents\GitHub\Proyecto-Lectura2\src\main\java\com\example\LecturaSana\repository\TarjetaNovedadRepository.java. Using fallback presentation compiler.
+mar. 02, 2026 1:46:14 A. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
