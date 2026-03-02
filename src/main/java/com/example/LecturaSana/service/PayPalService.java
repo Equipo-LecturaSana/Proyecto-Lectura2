@@ -111,7 +111,7 @@ public class PayPalService {
 
         HttpEntity<String> request = new HttpEntity<>("", headers);
 
-        ResponseEntity<Map> response = restTemplate.exchange(url, HttpMethod.POST, request, Map.class);
+        ResponseEntity<Map<String, Object>> response = restTemplate.exchange(url, HttpMethod.POST, request, new org.springframework.core.ParameterizedTypeReference<Map<String, Object>>() {});
 
         if (response.getStatusCode().is2xxSuccessful() && response.getBody() != null) {
             return response.getBody();
